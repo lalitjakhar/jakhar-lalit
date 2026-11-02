@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   agentRules: false,
+  experimental: {
+    agentUpgrade: "security",
+  },
   images: {
     remotePatterns: [],
     unoptimized: false,
