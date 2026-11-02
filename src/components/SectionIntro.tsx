@@ -26,7 +26,7 @@ export default function SectionIntro({
       </p>
       <h2
         id={headingId}
-        className={`mt-3 text-balance font-display text-4xl leading-[1.05] tracking-tight md:text-5xl ${
+        className={`mt-3 text-balance font-display text-3xl leading-[1.05] tracking-tight md:text-5xl ${
           dark ? "text-white" : "text-ink"
         }`}
       >

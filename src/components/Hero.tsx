@@ -40,19 +40,19 @@ export default function Hero({ data }: HeroProps) {
     <section id="home" className="hero-grid">
       <div className="shell relative pt-28 pb-16 md:pt-32 md:pb-24">
         <div className="grid items-end gap-12 lg:grid-cols-12 lg:gap-16">
-          <div className="lg:col-span-7">
+          <div className="min-w-0 lg:col-span-7">
             <p className="flex items-center gap-3 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-accent">
               <span className="h-px w-8 bg-accent" aria-hidden="true" />
               Jaipur-based frontend developer
             </p>
             <h1 className="mt-6 max-w-3xl text-balance text-ink">
-              <span className="block font-display text-[clamp(3.25rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em]">
+              <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em]">
                 I build
               </span>
-              <span className="block font-display text-[clamp(3.25rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em] text-accent">
+              <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em] text-accent">
                 thoughtful
               </span>
-              <span className="block font-display text-[clamp(3.25rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em]">
+              <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em]">
                 web experiences.
               </span>
             </h1>
@@ -83,7 +83,7 @@ export default function Hero({ data }: HeroProps) {
             />
           </div>
 
-          <figure className="lg:col-span-5">
+          <figure className="min-w-0 lg:col-span-5">
             <div className="relative overflow-hidden rounded-[2rem] border border-line bg-surface p-2 shadow-[0_24px_90px_-40px_rgba(0,0,0,0.9)]">
               <SeoImage
                 src={portrait.src}
