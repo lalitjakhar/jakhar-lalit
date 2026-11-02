@@ -28,7 +28,7 @@ export default function Resume({ data }: ResumeProps) {
               <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-deep">
                 Core toolkit
               </p>
-              <h3 className="mt-2 font-display text-2xl tracking-tight text-ink md:text-3xl">
+              <h3 className="mt-2 font-display text-subsection text-ink">
                 The tools I reach for
               </h3>
             </div>
@@ -73,7 +73,7 @@ export default function Resume({ data }: ResumeProps) {
 
         <div className="mt-16 md:mt-20">
           <div className="flex flex-col justify-between gap-3 border-b border-line pb-5 sm:flex-row sm:items-end">
-            <h3 className="font-display text-2xl tracking-tight text-ink md:text-3xl">Experience</h3>
+            <h3 className="font-display text-subsection text-ink">Experience</h3>
             <p className="text-sm text-muted">From first frontend role to product teams</p>
           </div>
           <div className="mt-5 space-y-3">
@@ -100,7 +100,7 @@ export default function Resume({ data }: ResumeProps) {
         </div>
 
         <div className="mt-16 md:mt-20">
-          <h3 className="border-b border-line pb-5 font-display text-2xl tracking-tight text-ink md:text-3xl">
+          <h3 className="border-b border-line pb-5 font-display text-subsection text-ink">
             Education
           </h3>
           <div className="mt-5">

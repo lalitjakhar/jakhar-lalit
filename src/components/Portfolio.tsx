@@ -68,7 +68,7 @@ export default function Portfolio() {
                         <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-fog-dim">
                           {String(index + 1).padStart(2, "0")} / {host}
                         </p>
-                        <h3 className="mt-2 font-display text-2xl tracking-tight text-white transition group-hover:text-accent-soft md:text-[1.7rem]">
+                        <h3 className="mt-2 font-display text-project-title text-white transition group-hover:text-accent-soft">
                           {project.title}
                         </h3>
                         <p className="mt-2 text-sm text-fog-dim">

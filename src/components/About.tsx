@@ -83,7 +83,7 @@ export default function About({ data }: AboutProps) {
         </div>
 
         <div className="mt-16 md:mt-20">
-          <h3 className="font-display text-2xl tracking-tight text-ink md:text-3xl">A little beyond the screen</h3>
+          <h3 className="font-display text-subsection text-ink">A little beyond the screen</h3>
           <ul className="mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 md:grid md:grid-cols-4 md:overflow-visible md:pb-0">
             {aboutGalleryImages.map((image) => (
               <li key={image.src} className="w-[78%] shrink-0 snap-start md:w-auto">

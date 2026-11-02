@@ -180,7 +180,7 @@ export default function Contact() {
             <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-soft">
               Say hello
             </p>
-            <h3 className="mt-3 font-display text-2xl tracking-tight md:text-3xl">
+            <h3 className="mt-3 font-display text-subsection">
               Let’s start with a conversation.
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-fog">

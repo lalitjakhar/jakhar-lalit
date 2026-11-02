@@ -37,7 +37,7 @@ export default function Footer({ data }: FooterProps) {
         <div className="flex flex-col items-start justify-between gap-8 border-b border-white/10 pb-12 md:flex-row md:items-end">
           <div className="max-w-xl">
             <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-accent-soft">Next</p>
-            <p className="mt-3 font-display text-4xl leading-[1.05] tracking-tight text-white md:text-5xl">
+            <p className="mt-3 font-display text-section text-white">
               Have a product to build?
             </p>
           </div>

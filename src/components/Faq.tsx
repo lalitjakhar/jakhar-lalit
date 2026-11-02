@@ -34,7 +34,7 @@ export default function Faq() {
             <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-soft">
               Have a project in mind?
             </p>
-            <h3 className="mt-3 font-display text-2xl leading-tight tracking-tight md:text-3xl">
+            <h3 className="mt-3 font-display text-subsection">
               Let’s talk about what you’re building.
             </h3>
             <p className="mt-4 text-sm leading-relaxed text-fog">

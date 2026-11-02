@@ -32,6 +32,24 @@ const config: Config = {
         sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
         display: ["var(--font-space-grotesk)", "system-ui", "sans-serif"],
       },
+      fontSize: {
+        "display-title": [
+          "clamp(2.75rem, 5vw, 4.5rem)",
+          { lineHeight: "1.02", letterSpacing: "-0.055em" },
+        ],
+        section: [
+          "clamp(2rem, 3.8vw, 3rem)",
+          { lineHeight: "1.08", letterSpacing: "-0.045em" },
+        ],
+        subsection: [
+          "clamp(1.375rem, 2.5vw, 1.75rem)",
+          { lineHeight: "1.2", letterSpacing: "-0.035em" },
+        ],
+        "project-title": [
+          "clamp(1.25rem, 2vw, 1.625rem)",
+          { lineHeight: "1.2", letterSpacing: "-0.03em" },
+        ],
+      },
     },
   },
   plugins: [],
