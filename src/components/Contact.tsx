@@ -78,7 +78,7 @@ export default function Contact() {
     "w-full rounded-xl border border-line bg-paper px-4 py-3 text-base text-ink outline-none transition placeholder:text-subtle focus:border-accent focus:ring-2 focus:ring-accent/20";
 
   return (
-    <section id="contact" className="scroll-mt-24 bg-lavender-deep py-20 md:py-28" aria-labelledby="contact-heading">
+    <section id="contact" className="scroll-mt-24 bg-blush-deep py-20 md:py-28" aria-labelledby="contact-heading">
       <div className="shell">
         <SectionIntro
           eyebrow="06 / Start a conversation"

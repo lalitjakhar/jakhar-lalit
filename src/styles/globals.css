@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --paper: #f5f6fb;
-  --ink: #171b2e;
-  --accent: #5867dc;
+  --paper: #faf7f2;
+  --ink: #261c1d;
+  --accent: #b8323b;
   color-scheme: light;
 }
 
@@ -20,7 +20,7 @@ body {
 
 ::selection {
   background: var(--accent);
-  color: #171b2e;
+  color: #ffffff;
 }
 
 a:focus-visible,
@@ -41,11 +41,11 @@ summary {
 .hero-grid {
   position: relative;
   isolation: isolate;
-  background-color: #11182b;
+  background-color: #211619;
   background:
-    radial-gradient(ellipse at 86% 20%, rgba(88, 103, 220, 0.25), transparent 34%),
-    radial-gradient(ellipse at 10% 82%, rgba(75, 112, 190, 0.2), transparent 36%),
-    #11182b;
+    radial-gradient(ellipse at 86% 20%, rgba(184, 50, 59, 0.28), transparent 34%),
+    radial-gradient(ellipse at 10% 82%, rgba(131, 53, 65, 0.22), transparent 36%),
+    #211619;
 }
 
 .hero-grid::before {
@@ -54,8 +54,8 @@ summary {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(to right, rgba(226, 231, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(226, 231, 255, 0.045) 1px, transparent 1px);
+    linear-gradient(to right, rgba(247, 222, 219, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(247, 222, 219, 0.045) 1px, transparent 1px);
   background-size: 80px 80px;
   mask-image: radial-gradient(ellipse at 72% 18%, black 8%, transparent 72%);
 }

@@ -100,7 +100,7 @@ export default function Hero({ data }: HeroProps) {
                   <span className="block text-sm font-semibold text-white">Lalit Jakhar</span>
                   <span className="mt-0.5 block text-xs text-fog">Frontend developer · Jaipur, India</span>
                 </span>
-                <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-accent shadow-[0_0_16px_rgba(88,103,220,0.8)]" />
+                <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-accent shadow-[0_0_16px_rgba(184,50,59,0.8)]" />
               </div>
             </div>
             <figcaption className="sr-only">{portrait.caption}</figcaption>

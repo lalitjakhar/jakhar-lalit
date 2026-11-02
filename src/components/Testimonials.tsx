@@ -12,7 +12,7 @@ export default function Testimonials({ data }: TestimonialsProps) {
   return (
     <section
       id="testimonials"
-      className="scroll-mt-24 bg-lavender py-20 md:py-28"
+      className="scroll-mt-24 bg-blush py-20 md:py-28"
       aria-labelledby="testimonials-heading"
     >
       <div className="shell">
