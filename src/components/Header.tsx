@@ -73,7 +73,7 @@ export default function Header() {
     >
       <div className="shell flex h-16 items-center justify-between gap-4">
         <a href="#home" className="flex items-center gap-3 text-ink" aria-label="Lalit Jakhar, home">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-ink text-[11px] font-semibold tracking-[0.14em] text-white">
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent text-[11px] font-bold tracking-[0.14em] text-[#0b100e]">
             LJ
           </span>
           <span className="font-display text-lg leading-none tracking-tight">Lalit Jakhar</span>
@@ -108,7 +108,7 @@ export default function Header() {
           </a>
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink md:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line bg-surface text-ink md:hidden"
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-navigation"
@@ -120,7 +120,7 @@ export default function Header() {
       </div>
 
       {isMobileMenuOpen ? (
-        <nav id="mobile-navigation" aria-label="Mobile" className="border-t border-line md:hidden">
+        <nav id="mobile-navigation" aria-label="Mobile" className="border-t border-line bg-paper md:hidden">
           <ul className="shell max-h-[calc(100svh-4rem)] space-y-1 overflow-y-auto py-4">
             {navItems.map((item) => {
               const active = activeSection === item.id;
@@ -130,7 +130,7 @@ export default function Header() {
                     href={item.href}
                     aria-current={active ? "location" : undefined}
                     className={`block rounded-xl px-3 py-3 text-lg ${
-                      active ? "bg-white font-medium text-ink" : "text-muted"
+                      active ? "bg-elevated font-medium text-ink" : "text-muted"
                     }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >

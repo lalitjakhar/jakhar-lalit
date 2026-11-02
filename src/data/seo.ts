@@ -8,21 +8,21 @@ import {
   toAbsoluteImageUrl,
 } from "@/data/siteImages";
 
-export const SITE_NAME = "Lalit Jakhar Portfolio";
-export const SITE_TITLE = "Lalit Jakhar - Frontend Developer in Jaipur";
-export const SITE_UPDATED = "2026-10-13";
+export const SITE_NAME = "Lalit Jakhar";
+export const SITE_TITLE = "Lalit Jakhar | React & Next.js Frontend Developer";
+export const SITE_UPDATED = "2026-11-02";
 export const SITE_DESCRIPTION =
-  "Lalit Jakhar is a frontend developer in Jaipur. He builds React.js and Next.js websites, including work for Zyneto, Kroolo, Cheelgadi, and NDC Oman.";
+  "Lalit Jakhar is a Jaipur-based frontend developer building fast, accessible React and Next.js experiences with TypeScript for product and business teams.";
 
 export const SITE_KEYWORDS = [
   "Lalit Jakhar",
-  "Lalit Jakhar Frontend Developer",
-  "Lalit Jakhar Jaipur",
-  "Frontend Developer Jaipur",
-  "React.js Developer",
-  "Next.js Developer",
-  "TypeScript Web Developer",
-  "Web Developer Rajasthan",
+  "frontend developer Jaipur",
+  "React developer India",
+  "Next.js developer India",
+  "TypeScript frontend developer",
+  "web developer Rajasthan",
+  "frontend engineer portfolio",
+  "React Next.js portfolio",
 ];
 
 export const SOCIAL_PROFILES = [
@@ -302,6 +302,7 @@ export function buildStructuredDataGraph() {
         familyName: "Jakhar",
         jobTitle: main.occupation,
         url: SITE_URL,
+        mainEntityOfPage: { "@id": profilePageId },
         email: main.email,
         telephone: main.phone,
         description: main.bio,

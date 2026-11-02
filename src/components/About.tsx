@@ -27,7 +27,7 @@ export default function About({ data }: AboutProps) {
   ];
 
   return (
-    <section id="about" className="scroll-mt-24 bg-white py-20 md:py-28" aria-labelledby="about-heading">
+    <section id="about" className="scroll-mt-24 bg-surface py-20 md:py-28" aria-labelledby="about-heading">
       <div className="shell">
         <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
@@ -68,7 +68,7 @@ export default function About({ data }: AboutProps) {
           </div>
 
           <figure className="lg:col-span-5">
-            <div className="overflow-hidden rounded-[1.75rem] bg-paper">
+            <div className="overflow-hidden rounded-[1.75rem] border border-line bg-elevated p-2">
               <SeoImage
                 src={portrait.src}
                 alt={portrait.alt}
@@ -76,7 +76,7 @@ export default function About({ data }: AboutProps) {
                 width={portrait.width}
                 height={portrait.height}
                 sizes="(max-width: 1024px) 100vw, 420px"
-                className="aspect-[4/5] w-full object-cover object-top"
+                className="aspect-[4/5] w-full rounded-[1.25rem] object-cover object-top"
               />
             </div>
           </figure>
@@ -88,7 +88,7 @@ export default function About({ data }: AboutProps) {
             {aboutGalleryImages.map((image) => (
               <li key={image.src} className="w-[78%] shrink-0 snap-start md:w-auto">
                 <figure>
-                  <div className="overflow-hidden rounded-2xl bg-paper">
+                  <div className="overflow-hidden rounded-2xl border border-line bg-elevated">
                 <SeoImage
                       src={image.src}
                       alt={image.alt}
@@ -110,7 +110,7 @@ export default function About({ data }: AboutProps) {
         <h3 className="sr-only">Contact details</h3>
         <dl className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
           {details.map((item) => (
-            <div key={item.label} className="bg-white p-5">
+            <div key={item.label} className="bg-surface p-5">
               <dt className="font-mono text-[11px] uppercase tracking-[0.16em] text-subtle">{item.label}</dt>
               <dd className="mt-2 text-sm font-medium text-ink md:text-base">
                 {item.href ? (

@@ -43,7 +43,7 @@ export default function NotFound() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="block rounded-2xl border border-line bg-white px-4 py-4 text-sm font-medium text-ink transition hover:border-ink/30"
+                className="block rounded-2xl border border-line bg-surface px-4 py-4 text-sm font-medium text-ink transition hover:border-accent/50"
               >
                 {link.label}
               </Link>

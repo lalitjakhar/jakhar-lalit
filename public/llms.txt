@@ -1,10 +1,10 @@
-# Lalit Jakhar Portfolio
+# Lalit Jakhar — Frontend Developer
 
-> Lalit Jakhar is a Frontend Developer in Jaipur, Rajasthan, India. He builds responsive websites with React.js, Next.js, TypeScript, and Tailwind CSS.
+> Lalit Jakhar is a Jaipur-based frontend developer building fast, accessible digital experiences with React.js, Next.js, TypeScript, and Tailwind CSS.
 
 ## About
 - Name: Lalit Jakhar
-- Role: Frontend Developer
+- Role: Frontend Developer, React and Next.js
 - Location: Jaipur, Rajasthan, India
 - Website: https://lalit-jakhar.vercel.app
 - Current work: Kroolo and Zyneto Global Technologies
@@ -20,7 +20,7 @@
 ## On this page
 - Home: https://lalit-jakhar.vercel.app/#home
 - About: https://lalit-jakhar.vercel.app/#about
-- Portfolio: https://lalit-jakhar.vercel.app/#portfolio
+- Selected work: https://lalit-jakhar.vercel.app/#portfolio
 - Experience: https://lalit-jakhar.vercel.app/#resume
 - Recommendations: https://lalit-jakhar.vercel.app/#testimonials
 - Questions: https://lalit-jakhar.vercel.app/#faq

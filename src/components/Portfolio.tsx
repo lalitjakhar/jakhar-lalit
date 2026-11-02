@@ -7,7 +7,7 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="scroll-mt-24 bg-ink py-20 text-white md:py-28"
+      className="scroll-mt-24 bg-[#101813] py-20 text-white md:py-28"
       aria-labelledby="portfolio-heading"
     >
       <div className="shell">
@@ -24,14 +24,14 @@ export default function Portfolio() {
             const host = new URL(project.url).host.replace(/^www\./, "");
 
             return (
-              <article key={project.title}>
+              <article key={project.title} className="rounded-3xl border border-white/10 bg-white/[0.025] p-4 transition hover:border-accent/40 md:p-5">
                 <a
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group block"
                 >
-                  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white">
+                  <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#0b100e]">
                     <SeoImage
                       src={project.image.src}
                       alt={project.image.alt}
@@ -52,7 +52,7 @@ export default function Portfolio() {
                       <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-fog-dim">
                         {String(index + 1).padStart(2, "0")} · {host}
                       </p>
-                      <h3 className="mt-2 font-display text-2xl tracking-tight text-white md:text-[1.7rem]">
+                      <h3 className="mt-2 font-display text-2xl tracking-tight text-white transition group-hover:text-accent md:text-[1.7rem]">
                         {project.title}
                       </h3>
                       <p className="mt-2 text-sm text-fog-dim">

@@ -8,14 +8,14 @@ interface FooterProps {
 }
 
 const pageLinks = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
+  { id: "home", label: "Home" },
+  { id: "about", label: "About" },
   { id: "portfolio", label: "Work" },
   { id: "resume", label: "Experience" },
   { id: "testimonials", label: "Recommendations" },
   { id: "faq", label: "Questions" },
     { id: "contact", label: "Contact" },
-  ];
+];
 
 const technologies = [
   "React.js",
@@ -32,7 +32,7 @@ export default function Footer({ data }: FooterProps) {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-ink text-white" role="contentinfo">
+    <footer className="bg-[#070b09] text-white" role="contentinfo">
       <div className="shell pb-24 pt-16 md:pt-20">
         <div className="flex flex-col items-start justify-between gap-8 border-b border-white/10 pb-12 md:flex-row md:items-end">
           <div className="max-w-xl">
@@ -41,7 +41,7 @@ export default function Footer({ data }: FooterProps) {
               Have a product to build?
             </p>
           </div>
-          <a href="#contact" className="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-medium text-ink transition hover:bg-fog">
+          <a href="#contact" className="inline-flex items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-[#0b100e] transition hover:bg-[#b5e958]">
             Start a conversation
           </a>
         </div>
@@ -59,7 +59,7 @@ export default function Footer({ data }: FooterProps) {
                 linkClassName="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white transition hover:bg-white hover:text-ink"
               />
             ) : null}
-                  </div>
+          </div>
 
           <nav aria-label="Footer">
             <p className="text-sm font-medium text-white">On this page</p>

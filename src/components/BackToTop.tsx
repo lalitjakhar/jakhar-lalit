@@ -19,7 +19,7 @@ export default function BackToTop() {
     <a
       href="#home"
       aria-label="Back to top"
-      className="fixed bottom-5 right-5 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-white text-ink shadow-[0_8px_30px_rgba(0,0,0,0.28)] transition hover:-translate-y-0.5"
+      className="fixed bottom-5 right-5 z-40 flex h-11 w-11 items-center justify-center rounded-xl bg-accent text-[#0b100e] shadow-[0_8px_30px_rgba(0,0,0,0.45)] transition hover:-translate-y-0.5"
     >
       <ArrowUp size={18} aria-hidden="true" />
     </a>

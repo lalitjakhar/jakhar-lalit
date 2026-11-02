@@ -26,8 +26,8 @@ export default function Resume({ data }: ResumeProps) {
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">{skillmessage}</p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {skills.map((skill) => (
-              <li key={skill.name} className="rounded-2xl border border-line bg-white p-5">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-ink">
+              <li key={skill.name} className="rounded-2xl border border-line bg-surface p-5 transition hover:border-accent/40">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-elevated">
                   <SeoImage
                     alt=""
                     title={`${skill.name} logo`}

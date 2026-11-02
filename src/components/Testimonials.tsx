@@ -12,7 +12,7 @@ export default function Testimonials({ data }: TestimonialsProps) {
   return (
     <section
       id="testimonials"
-      className="scroll-mt-24 bg-white py-20 md:py-28"
+      className="scroll-mt-24 bg-surface py-20 md:py-28"
       aria-labelledby="testimonials-heading"
     >
       <div className="shell">
@@ -24,7 +24,7 @@ export default function Testimonials({ data }: TestimonialsProps) {
         />
         <div className="grid gap-4 md:grid-cols-2">
           {data.testimonials.map((testimonial, index) => (
-            <figure key={testimonial.text.slice(0, 48)} className="flex h-full flex-col rounded-2xl border border-line bg-paper p-6 md:p-8">
+            <figure key={testimonial.text.slice(0, 48)} className="flex h-full flex-col rounded-2xl border border-line bg-elevated p-6 md:p-8">
               <Quote size={18} className="text-accent" aria-hidden="true" />
               <blockquote className="mt-4 flex-1">
                 <p className="text-pretty text-base leading-relaxed text-ink">{testimonial.text}</p>

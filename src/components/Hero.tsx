@@ -41,21 +41,25 @@ export default function Hero({ data }: HeroProps) {
       <div className="shell relative pt-28 pb-16 md:pt-32 md:pb-24">
         <div className="grid items-end gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
-            <h1 className="text-ink">
-              <span className="block font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-accent">
-                Frontend Developer in Jaipur
+            <p className="flex items-center gap-3 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-accent">
+              <span className="h-px w-8 bg-accent" aria-hidden="true" />
+              Jaipur-based frontend developer
+            </p>
+            <h1 className="mt-6 max-w-3xl text-balance text-ink">
+              <span className="block font-display text-[clamp(3.25rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em]">
+                I build
               </span>
-              <span className="mt-4 block font-display text-[clamp(3.25rem,7vw,5.75rem)] leading-[0.92] tracking-[-0.03em]">
-                Lalit
+              <span className="block font-display text-[clamp(3.25rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em] text-accent">
+                thoughtful
               </span>
-              <span className="block font-display text-[clamp(3.25rem,7vw,5.75rem)] leading-[0.92] tracking-[-0.03em]">
-                Jakhar
+              <span className="block font-display text-[clamp(3.25rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em]">
+                web experiences.
               </span>
             </h1>
             <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted md:text-lg">
-              I am a frontend developer in Jaipur. I build responsive web applications
-              with React.js, Next.js, and TypeScript — recruiting, ecommerce, and product
-              sites that stay fast, accessible, and easy to use.
+              I am Lalit Jakhar, a frontend developer shaping clear, fast digital products
+              with React.js, Next.js, and TypeScript. From the first pixel to the final
+              page load, I care about how every detail works.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a href="#portfolio" className="btn-primary">
@@ -75,12 +79,12 @@ export default function Hero({ data }: HeroProps) {
             <SocialLinks
               social={data.social}
               listClassName="mt-8 flex flex-wrap gap-2"
-              linkClassName="flex h-10 w-10 items-center justify-center rounded-full border border-line bg-white text-ink transition hover:border-ink hover:bg-ink hover:text-white"
+              linkClassName="flex h-10 w-10 items-center justify-center rounded-xl border border-line bg-surface text-ink transition hover:border-accent hover:bg-accent hover:text-[#0b100e]"
             />
           </div>
 
           <figure className="lg:col-span-5">
-            <div className="overflow-hidden rounded-[1.75rem] bg-[#e7e4dc] shadow-[0_24px_80px_-36px_rgba(16,16,14,0.55)]">
+            <div className="relative overflow-hidden rounded-[2rem] border border-line bg-surface p-2 shadow-[0_24px_90px_-40px_rgba(0,0,0,0.9)]">
               <SeoImage
                 src={portrait.src}
                 alt={portrait.alt}
@@ -89,10 +93,17 @@ export default function Hero({ data }: HeroProps) {
                 height={portrait.height}
                 priority
                 sizes="(max-width: 1024px) 100vw, 420px"
-                className="aspect-[4/5] w-full object-cover object-top"
+                className="aspect-[4/5] w-full rounded-[1.5rem] object-cover object-top"
               />
+              <div aria-hidden="true" className="absolute bottom-5 left-5 right-5 flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#0b100e]/90 px-4 py-3 backdrop-blur-md">
+                <span>
+                  <span className="block text-sm font-semibold text-ink">Lalit Jakhar</span>
+                  <span className="mt-0.5 block text-xs text-muted">Frontend developer · Jaipur, India</span>
+                </span>
+                <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-accent shadow-[0_0_16px_rgba(199,243,106,0.8)]" />
+              </div>
             </div>
-            <figcaption className="mt-3 text-sm leading-snug text-muted">{portrait.caption}</figcaption>
+            <figcaption className="sr-only">{portrait.caption}</figcaption>
           </figure>
         </div>
 

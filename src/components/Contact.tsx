@@ -75,10 +75,10 @@ export default function Contact() {
   ];
 
   const fieldClass =
-    "w-full rounded-xl border border-line bg-paper px-4 py-3 text-base text-ink outline-none transition placeholder:text-subtle focus:border-accent focus:ring-2 focus:ring-accent/20";
+    "w-full rounded-xl border border-line bg-elevated px-4 py-3 text-base text-ink outline-none transition placeholder:text-subtle focus:border-accent focus:ring-2 focus:ring-accent/20";
 
   return (
-    <section id="contact" className="scroll-mt-24 bg-white py-20 md:py-28" aria-labelledby="contact-heading">
+    <section id="contact" className="scroll-mt-24 bg-surface py-20 md:py-28" aria-labelledby="contact-heading">
       <div className="shell">
         <SectionIntro
           eyebrow="06 - Hello"
@@ -171,7 +171,7 @@ export default function Contact() {
           </form>
 
           <aside className="lg:col-span-5 lg:sticky lg:top-24">
-            <ul className="divide-y divide-line rounded-2xl border border-line">
+            <ul className="divide-y divide-line rounded-2xl border border-line bg-elevated">
               {contactMethods.map((method) => {
                 const Icon = method.icon;
                 const external = method.href.startsWith("http");
@@ -183,7 +183,7 @@ export default function Contact() {
                       aria-label={`${method.title}: ${method.value}`}
                       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                     >
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ink text-white">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent text-[#0b100e]">
                         <Icon size={16} aria-hidden="true" />
                       </span>
                       <span>
