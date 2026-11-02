@@ -1,0 +1,44 @@
+# Lalit Jakhar Portfolio
+
+> Lalit Jakhar is a Frontend Developer in Jaipur, Rajasthan, India. He builds responsive websites with React.js, Next.js, TypeScript, and Tailwind CSS.
+
+## About
+- Name: Lalit Jakhar
+- Role: Frontend Developer
+- Location: Jaipur, Rajasthan, India
+- Website: https://lalit-jakhar.vercel.app
+- Current work: Kroolo and Zyneto Global Technologies
+- Earlier role: Frontend Developer at GOHASHINCLUDE PVT. LTD. (September 2022 – February 2024)
+- Education: BCA, Computer Science, Maharishi Arvind Institute of Science & Management (June 2025)
+
+## Selected work
+- Zyneto Global Technologies: https://www.zyneto.com (Feb 2024 – Present). Corporate site for AI engineering and digital services. Next.js, React.js, TypeScript, Tailwind CSS, Material-UI, Figma, SEO.
+- Kroolo AI WorkOS: https://www.kroolo.com (Nov 2024 – Present). Corporate site for an AI-powered WorkOS. Next.js, TypeScript, Tailwind CSS, SEO.
+- Cheelgadi, Jaipur: https://cheelgadi.com/ (Jul 2026 – Sep 2026). Vegetarian restaurant, hotel, and wedding venue near Jaipur Airport. React.js, Next.js, TypeScript, Tailwind CSS, Figma.
+- NDC Oman: https://ndcmuscat.com/en (Apr 2026 – Jul 2026). Corporate site for National Distribution Company, Oman. Next.js, TypeScript, Tailwind CSS, SEO.
+
+## On this page
+- Home: https://lalit-jakhar.vercel.app/#home
+- About: https://lalit-jakhar.vercel.app/#about
+- Portfolio: https://lalit-jakhar.vercel.app/#portfolio
+- Experience: https://lalit-jakhar.vercel.app/#resume
+- Recommendations: https://lalit-jakhar.vercel.app/#testimonials
+- Questions: https://lalit-jakhar.vercel.app/#faq
+- Contact: https://lalit-jakhar.vercel.app/#contact
+
+## Contact
+- Email: lalit25jakhar@gmail.com
+- Phone: +91 8690843263
+- LinkedIn: https://www.linkedin.com/in/lalitjakhar/
+- GitHub: https://github.com/lalitjakhar
+- Instagram: https://www.instagram.com/lalitjakhar_/
+- X: https://x.com/lalit_jakhar25
+- YouTube: https://www.youtube.com/@lalit_jakhar_25
+- Facebook: https://www.facebook.com/lalit.choudhary25
+
+## Skills
+React.js, Next.js, TypeScript, JavaScript, HTML5, CSS, Tailwind CSS, Material-UI, Bootstrap, SEO, Web Performance, Git
+
+## Sitemaps
+- https://lalit-jakhar.vercel.app/sitemap.xml
+- https://lalit-jakhar.vercel.app/sitemap-images.xml

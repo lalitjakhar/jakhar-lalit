@@ -1,0 +1,26 @@
+{
+  "short_name": "Lalit Jakhar",
+  "name": "Lalit Jakhar - Frontend Developer Portfolio",
+  "description": "Portfolio of Lalit Jakhar, a Frontend Developer in Jaipur building websites with React.js, Next.js, and TypeScript.",
+  "lang": "en-IN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#f6f5f1",
+  "background_color": "#f6f5f1",
+  "categories": ["business", "productivity", "portfolio"],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/images/lalit-jakhar-profile-picture.jpeg",
+      "sizes": "400x400",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
