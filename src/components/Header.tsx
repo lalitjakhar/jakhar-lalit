@@ -68,12 +68,12 @@ export default function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 border-b border-line/80 backdrop-blur-md transition-colors ${
-        isScrolled || isMobileMenuOpen ? "bg-[#14221a]/95" : "bg-[#14221a]/85"
+        isScrolled || isMobileMenuOpen ? "bg-hero/95" : "bg-hero/85"
       }`}
     >
       <div className="shell flex h-16 items-center justify-between gap-4">
         <a href="#home" className="flex items-center gap-3 text-white" aria-label="Lalit Jakhar, home">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent text-[11px] font-bold tracking-[0.14em] text-ink">
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent text-[11px] font-bold tracking-[0.14em] text-white">
             LJ
           </span>
           <span className="font-display text-lg leading-none tracking-tight">Lalit Jakhar</span>
@@ -90,7 +90,7 @@ export default function Header() {
                     aria-current={active ? "location" : undefined}
                     className={`text-sm transition ${
                       active
-                        ? "font-medium text-white underline decoration-accent decoration-2 underline-offset-[10px]"
+                        ? "font-medium text-white underline decoration-accent-soft decoration-2 underline-offset-[10px]"
                         : "text-fog-dim hover:text-white"
                     }`}
                   >
@@ -120,7 +120,7 @@ export default function Header() {
       </div>
 
       {isMobileMenuOpen ? (
-        <nav id="mobile-navigation" aria-label="Mobile" className="border-t border-white/10 bg-[#14221a] md:hidden">
+        <nav id="mobile-navigation" aria-label="Mobile" className="border-t border-white/10 bg-hero md:hidden">
           <ul className="shell max-h-[calc(100svh-4rem)] space-y-1 overflow-y-auto py-4">
             {navItems.map((item) => {
               const active = activeSection === item.id;

@@ -12,7 +12,7 @@ export default function Testimonials({ data }: TestimonialsProps) {
   return (
     <section
       id="testimonials"
-      className="scroll-mt-24 bg-[#e9e5d9] py-20 md:py-28"
+      className="scroll-mt-24 bg-lavender py-20 md:py-28"
       aria-labelledby="testimonials-heading"
     >
       <div className="shell">
@@ -26,10 +26,10 @@ export default function Testimonials({ data }: TestimonialsProps) {
           {data.testimonials.map((testimonial, index) => (
             <figure
               key={testimonial.text.slice(0, 48)}
-              className="group flex h-full flex-col rounded-2xl border border-[#ded9cb] bg-[#f7f5ef] p-6 transition hover:-translate-y-1 hover:border-[#b4864b]/50 md:p-7"
+              className="group flex h-full flex-col rounded-2xl border border-line bg-elevated p-6 transition hover:-translate-y-1 hover:border-accent/50 md:p-7"
             >
               <div className="flex items-center justify-between">
-                <Quote size={19} className="text-[#805d35]" aria-hidden="true" />
+                <Quote size={19} className="text-accent-deep" aria-hidden="true" />
                 <span className="font-mono text-[11px] tracking-[0.14em] text-subtle">
                   {String(index + 1).padStart(2, "0")}
                 </span>
@@ -39,7 +39,7 @@ export default function Testimonials({ data }: TestimonialsProps) {
                   {testimonial.text}
                 </p>
               </blockquote>
-              <figcaption className="mt-6 border-t border-[#ded9cb] pt-4 font-mono text-[10px] uppercase tracking-[0.16em] text-subtle">
+              <figcaption className="mt-6 border-t border-line pt-4 font-mono text-[10px] uppercase tracking-[0.16em] text-subtle">
                 Colleague feedback
               </figcaption>
             </figure>

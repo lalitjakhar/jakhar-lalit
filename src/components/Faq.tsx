@@ -19,7 +19,7 @@ export default function Faq() {
                   <h3 className="text-base font-semibold text-ink md:text-lg">{item.question}</h3>
                   <span
                     aria-hidden="true"
-                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line text-lg leading-none text-[#805d35] transition group-open:rotate-45 group-open:bg-[#17241c] group-open:text-white"
+                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line text-lg leading-none text-accent-deep transition group-open:rotate-45 group-open:bg-night group-open:text-white"
                   >
                     +
                   </span>
@@ -30,8 +30,8 @@ export default function Faq() {
               </details>
             ))}
           </div>
-          <aside className="rounded-[2rem] bg-[#17241c] p-6 text-white md:p-8">
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#d6bd91]">
+          <aside className="rounded-[2rem] bg-night p-6 text-white md:p-8">
+            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-soft">
               Have a project in mind?
             </p>
             <h3 className="mt-3 font-display text-2xl leading-tight tracking-tight md:text-3xl">

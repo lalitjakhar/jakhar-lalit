@@ -75,10 +75,10 @@ export default function Contact() {
   ];
 
   const fieldClass =
-    "w-full rounded-xl border border-[#d6d2c7] bg-[#fbfaf6] px-4 py-3 text-base text-ink outline-none transition placeholder:text-subtle focus:border-accent focus:ring-2 focus:ring-accent/20";
+    "w-full rounded-xl border border-line bg-paper px-4 py-3 text-base text-ink outline-none transition placeholder:text-subtle focus:border-accent focus:ring-2 focus:ring-accent/20";
 
   return (
-    <section id="contact" className="scroll-mt-24 bg-[#e8e2d5] py-20 md:py-28" aria-labelledby="contact-heading">
+    <section id="contact" className="scroll-mt-24 bg-lavender-deep py-20 md:py-28" aria-labelledby="contact-heading">
       <div className="shell">
         <SectionIntro
           eyebrow="06 / Start a conversation"
@@ -89,7 +89,7 @@ export default function Contact() {
 
         <div className="grid items-start gap-10 lg:grid-cols-12 lg:gap-16">
           <form
-            className="space-y-5 rounded-3xl border border-[#d6d2c7] bg-[#fbfaf6] p-5 md:p-8 lg:col-span-7"
+            className="space-y-5 rounded-3xl border border-line bg-paper p-5 md:p-8 lg:col-span-7"
             onSubmit={handleSubmit}
             aria-label="Contact form"
           >
@@ -176,8 +176,8 @@ export default function Contact() {
             )}
           </form>
 
-          <aside className="rounded-3xl bg-[#17241c] p-6 text-white md:p-8 lg:sticky lg:top-24 lg:col-span-5">
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#d6bd91]">
+          <aside className="rounded-3xl bg-night p-6 text-white md:p-8 lg:sticky lg:top-24 lg:col-span-5">
+            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-soft">
               Say hello
             </p>
             <h3 className="mt-3 font-display text-2xl tracking-tight md:text-3xl">
@@ -202,7 +202,7 @@ export default function Contact() {
                         <Icon size={16} aria-hidden="true" />
                       </span>
                       <span>
-                        <span className="block font-mono text-[11px] uppercase tracking-[0.16em] text-[#d6bd91]">
+                        <span className="block font-mono text-[11px] uppercase tracking-[0.16em] text-accent-soft">
                           {method.title}
                         </span>
                         <span className="mt-1 block break-words font-medium text-white">{method.value}</span>
@@ -216,7 +216,7 @@ export default function Contact() {
             <SocialLinks
               social={social}
               listClassName="mt-4 grid grid-cols-3 gap-2"
-              linkClassName="flex h-12 items-center justify-center rounded-xl border border-white/15 text-white transition hover:border-accent hover:bg-accent hover:text-ink"
+              linkClassName="flex h-12 items-center justify-center rounded-xl border border-white/15 text-white transition hover:border-accent hover:bg-accent hover:text-white"
             />
           </aside>
         </div>

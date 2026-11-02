@@ -25,7 +25,7 @@ export default function Resume({ data }: ResumeProps) {
         <div className="rounded-[2rem] border border-line bg-surface p-6 md:p-8">
           <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
             <div>
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#805d35]">
+              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-deep">
                 Core toolkit
               </p>
               <h3 className="mt-2 font-display text-2xl tracking-tight text-ink md:text-3xl">
@@ -40,11 +40,11 @@ export default function Resume({ data }: ResumeProps) {
             {coreSkills.map((skill, index) => (
               <li
                 key={skill.name}
-                className="rounded-2xl border border-line bg-[#fffefa] p-5 transition hover:-translate-y-1 hover:border-accent/60"
+                className="rounded-2xl border border-line bg-elevated p-5 transition hover:-translate-y-1 hover:border-accent/60"
               >
                 <span
                   aria-hidden="true"
-                  className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#17241c] font-display text-lg font-semibold text-[#d6bd91]"
+                  className="flex h-11 w-11 items-center justify-center rounded-xl bg-night font-display text-lg font-semibold text-accent-soft"
                 >
                   {String(index + 1).padStart(2, "0")}
                 </span>
@@ -62,7 +62,7 @@ export default function Resume({ data }: ResumeProps) {
                 <li
                   key={skill.name}
                   title={skill.description}
-                  className="rounded-full border border-line bg-[#fffefa]/70 px-3 py-1.5 text-sm font-medium text-ink"
+                  className="rounded-full border border-line bg-elevated/70 px-3 py-1.5 text-sm font-medium text-ink"
                 >
                   {skill.name}
                 </li>
@@ -83,13 +83,13 @@ export default function Resume({ data }: ResumeProps) {
                 className="grid gap-4 rounded-2xl border border-line bg-elevated p-5 md:grid-cols-12 md:items-start md:gap-8 md:p-6"
               >
                 <div className="md:col-span-4">
-                  <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-[#805d35]">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent-deep">
                     {job.years}
                   </p>
                   <h4 className="mt-2 text-xl font-semibold tracking-tight text-ink">
                     {job.company}
                   </h4>
-                  <p className="mt-1 text-sm font-medium text-[#805d35]">{job.title}</p>
+                  <p className="mt-1 text-sm font-medium text-accent-deep">{job.title}</p>
                 </div>
                 <p className="text-pretty text-sm leading-relaxed text-muted md:col-span-8 md:text-base">
                   {job.description}
@@ -110,11 +110,11 @@ export default function Resume({ data }: ResumeProps) {
                 className="grid gap-4 rounded-2xl border border-line bg-elevated p-5 md:grid-cols-12 md:items-start md:gap-8 md:p-6"
               >
                 <div className="md:col-span-4">
-                  <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-[#805d35]">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent-deep">
                     {edu.graduated}
                   </p>
                   <h4 className="mt-2 text-xl font-semibold tracking-tight text-ink">{edu.school}</h4>
-                  <p className="mt-1 text-sm font-medium text-[#805d35]">{edu.degree}</p>
+                  <p className="mt-1 text-sm font-medium text-accent-deep">{edu.degree}</p>
                 </div>
                 <p className="text-pretty text-sm leading-relaxed text-muted md:col-span-8 md:text-base">
                   {edu.description}

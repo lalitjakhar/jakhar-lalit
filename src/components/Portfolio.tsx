@@ -7,7 +7,7 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="scroll-mt-24 bg-[#17241c] py-20 text-white md:py-28"
+      className="scroll-mt-24 bg-night py-20 text-white md:py-28"
       aria-labelledby="portfolio-heading"
     >
       <div className="shell">
@@ -26,7 +26,7 @@ export default function Portfolio() {
             return (
               <article
                 key={project.title}
-                className={`rounded-3xl border border-white/10 bg-white/[0.035] p-4 transition hover:border-[#d6bd91]/50 md:p-5 ${
+                className={`rounded-3xl border border-white/10 bg-white/[0.035] p-4 transition hover:border-accent-soft/50 md:p-5 ${
                   index === 0 ? "md:col-span-2" : ""
                 }`}
               >
@@ -43,7 +43,7 @@ export default function Portfolio() {
                         : ""
                     }
                   >
-                    <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#101310]">
+                    <div className="overflow-hidden rounded-2xl border border-white/10 bg-hero">
                       <SeoImage
                         src={project.image.src}
                         alt={project.image.alt}
@@ -68,7 +68,7 @@ export default function Portfolio() {
                         <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-fog-dim">
                           {String(index + 1).padStart(2, "0")} / {host}
                         </p>
-                        <h3 className="mt-2 font-display text-2xl tracking-tight text-white transition group-hover:text-[#d6bd91] md:text-[1.7rem]">
+                        <h3 className="mt-2 font-display text-2xl tracking-tight text-white transition group-hover:text-accent-soft md:text-[1.7rem]">
                           {project.title}
                         </h3>
                         <p className="mt-2 text-sm text-fog-dim">
