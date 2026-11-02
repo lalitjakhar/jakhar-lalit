@@ -9,10 +9,10 @@ import {
 } from "@/data/siteImages";
 
 export const SITE_NAME = "Lalit Jakhar";
-export const SITE_TITLE = "Lalit Jakhar | React & Next.js Frontend Developer";
+export const SITE_TITLE = "Lalit Jakhar | Frontend Engineer in Jaipur";
 export const SITE_UPDATED = "2026-11-02";
 export const SITE_DESCRIPTION =
-  "Lalit Jakhar is a Jaipur-based frontend developer building fast, accessible React and Next.js experiences with TypeScript for product and business teams.";
+  "Lalit Jakhar is a Jaipur-based frontend engineer specializing in React, Next.js, and TypeScript. Explore selected product, corporate, and client work.";
 
 export const SITE_KEYWORDS = [
   "Lalit Jakhar",
@@ -22,7 +22,7 @@ export const SITE_KEYWORDS = [
   "TypeScript frontend developer",
   "web developer Rajasthan",
   "frontend engineer portfolio",
-  "React Next.js portfolio",
+  "React Next.js developer portfolio",
 ];
 
 export const SOCIAL_PROFILES = [
@@ -36,92 +36,48 @@ export const SOCIAL_PROFILES = [
 
 export const PORTFOLIO_PROJECTS = [
   {
-    title: "Zyneto Global Technologies (Version 2)",
+    title: "Kroolo — AI WorkOS",
     description:
-      "Second version of the Zyneto corporate website. I translated Figma UI into responsive pages with React.js, Next.js, and TypeScript, and styled them with Tailwind CSS, Bootstrap, and Material-UI. The site presents Zyneto’s AI engineering, intelligent agents, and digital services, with SEO audits and a clearer page structure.",
-    url: "https://www.zyneto.com",
-    image: portfolioImages[0],
-    role: "Frontend Engineer",
-    period: "Feb 2024 – Present",
-    imageFit: "cover",
-    stack: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Material-UI", "Figma", "SEO"],
+      "A clear, responsive corporate experience for Kroolo’s AI-powered WorkOS. I build and refine pages that bring its AI agents, workflows, and productivity tools into focus, using Next.js, TypeScript, and Tailwind CSS.",
+    url: "https://www.kroolo.com",
+    image: portfolioImages[4],
+    role: "Frontend Web Developer",
+    period: "Oct 2024 – Present",
+    imageFit: "center",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "SEO"],
   },
   {
     title: "Zyneto Global Technologies",
     description:
-      "Corporate website for Zyneto Global Technologies. I built responsive service and solution pages for AI engineering, software development, and digital products, with a consistent visual system and a search-friendly structure.",
+      "A corporate website for Zyneto’s technology services. I translated product and design requirements into responsive Next.js pages, with clear content structure and on-page SEO.",
     url: "https://www.zyneto.com",
-    image: portfolioImages[1],
-    role: "Frontend Engineer",
+    image: portfolioImages[0],
+    role: "Frontend Developer",
     period: "Feb 2024 – Present",
     imageFit: "cover",
-    stack: ["Next.js", "React.js", "JavaScript", "HTML", "Bootstrap", "SEO"],
+    stack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "SEO"],
   },
   {
-    title: "Kroolo Corp Website",
+    title: "Cheelgadi — Jaipur",
     description:
-      "Corporate website for Kroolo’s AI-powered WorkOS. I built responsive interfaces in Next.js, TypeScript, and Tailwind CSS that explain intelligent workflows, productivity tools, and modern work management.",
-    url: "https://www.kroolo.com",
-    image: portfolioImages[2],
-    role: "Frontend Engineer",
-    period: "Nov 2024 – Present",
-    imageFit: "cover",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "CSS", "SEO"],
-  },
-  {
-    title: "Kroolo Corp Website (Version 2)",
-    description:
-      "A later pass on the Kroolo website: cleaner layouts, stronger page structure, and SEO work including audits and on-page improvements so the AI WorkOS story stays fast and easy to browse on every device.",
-    url: "https://www.kroolo.com",
-    image: portfolioImages[3],
-    role: "Frontend Engineer",
-    period: "Nov 2024 – Present",
-    imageFit: "cover",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Website Optimization", "SEO Audits"],
-  },
-  {
-    title: "Kroolo | AI-Powered WorkOS",
-    description:
-      "Homepage for Kroolo’s AI WorkOS. I helped present AI agents, intelligent workflows, and enterprise productivity features through a responsive, performance-conscious layout with clear calls to book a demo.",
-    url: "https://www.kroolo.com",
-    image: portfolioImages[4],
-    role: "Frontend Engineer",
-    period: "Nov 2024 – Present",
-    imageFit: "center",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "SEO", "Website Optimization"],
-  },
-  {
-    title: "Zyneto Technology Insights",
-    description:
-      "Insights section of the Zyneto site, organizing articles on web development, cloud, AI, and enterprise software. I structured the listing, filters, and article cards so the content stays easy to scan.",
-    url: "https://www.zyneto.com",
-    image: portfolioImages[5],
-    role: "Frontend Engineer",
-    period: "Feb 2024 – Present",
-    imageFit: "cover",
-    stack: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "SEO"],
-  },
-  {
-    title: "Cheelgadi | Restaurant & Wedding Venue",
-    description:
-      "Website for Cheelgadi, a pure vegetarian restaurant, hotel, and wedding venue near Jaipur Airport. I designed and developed the responsive frontend so guests can explore dining, rooms, banquets, and venue details on any device.",
+      "A welcoming digital home for a vegetarian restaurant, hotel, and wedding venue near Jaipur Airport. The responsive site helps guests explore dining, stays, and event spaces.",
     url: "https://cheelgadi.com/",
     image: portfolioImages[6],
-    role: "Frontend Engineer",
+    role: "Frontend Developer",
     period: "Jul 2026 – Sep 2026",
     imageFit: "cover",
-    stack: ["React.js", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Figma"],
+    stack: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
-    title: "NDC Oman | Corporate Website",
+    title: "National Distribution Company — Oman",
     description:
-      "Corporate website for National Distribution Company (NDC) in Oman. I built a responsive Next.js and TypeScript frontend that presents distribution services, product categories, and partner brands, with Tailwind CSS and SEO-focused page structure.",
+      "A responsive corporate website for National Distribution Company in Oman, bringing its distribution services, product categories, and partner brands together in a clear, navigable experience.",
     url: "https://ndcmuscat.com/en",
     image: portfolioImages[7],
-    role: "Frontend Engineer",
+    role: "Frontend Developer",
     period: "Apr 2026 – Jul 2026",
     imageFit: "center",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "SEO", "Website Optimization"],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "SEO"],
   },
 ] as const;
 
@@ -129,12 +85,12 @@ export const FAQS = [
   {
     question: "Who is Lalit Jakhar?",
     answer:
-      "Lalit Jakhar is a Frontend Developer based in Jaipur, Rajasthan, India. He builds responsive web applications with React.js and Next.js. Current work includes Zyneto Global Technologies and Kroolo.",
+      "Lalit Jakhar is a frontend engineer based in Jaipur, Rajasthan, India. He builds responsive digital experiences with React, Next.js, and TypeScript for product teams and clients.",
   },
   {
     question: "What technologies does Lalit Jakhar use?",
     answer:
-      "His core stack is React.js, Next.js, TypeScript, and JavaScript, styled with Tailwind CSS, Material-UI, Bootstrap, HTML, and CSS. He also works on performance, SEO, and Git.",
+      "Lalit works with React, Next.js, TypeScript, JavaScript, Tailwind CSS, Material UI, Bootstrap, HTML, and CSS, with an interest in performance, accessibility, and technical SEO.",
   },
   {
     question: "Where is Lalit Jakhar based?",
@@ -144,12 +100,12 @@ export const FAQS = [
   {
     question: "Is Lalit Jakhar available for projects or roles?",
     answer:
-      "Yes. He welcomes project inquiries and conversations about team roles. Use the contact form on this page or email lalit25jakhar@gmail.com.",
+      "For frontend roles, product collaborations, or project inquiries, contact Lalit using the form on this page or email lalit25jakhar@gmail.com.",
   },
   {
     question: "Which websites has Lalit Jakhar worked on?",
     answer:
-      "Selected work includes Zyneto Global Technologies, Kroolo’s AI WorkOS website, Cheelgadi (a vegetarian restaurant, hotel, and wedding venue in Jaipur), and NDC Oman. All are linked from the portfolio on this page.",
+      "Selected work includes Kroolo’s AI WorkOS website, the Zyneto Global Technologies corporate site, Cheelgadi in Jaipur, and National Distribution Company in Oman. Project links and details are on this page.",
   },
   {
     question: "Which companies has Lalit Jakhar worked with?",

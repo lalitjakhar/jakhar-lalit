@@ -15,14 +15,14 @@ export default function Resume({ data }: ResumeProps) {
     <section id="resume" className="scroll-mt-24 bg-paper py-20 md:py-28" aria-labelledby="resume-heading">
       <div className="shell">
         <SectionIntro
-          eyebrow="03 - Background"
-          title="Experience"
+          eyebrow="02 / The work behind the work"
+          title="Built through experience"
           headingId="resume-heading"
-          description="Roles, education, and the technologies I use to design and ship interfaces."
+          description="Four years of frontend practice across product teams, agency work, and client websites—grounded in thoughtful implementation and collaboration."
         />
 
         <div>
-          <h3 className="font-display text-2xl tracking-tight text-ink md:text-3xl">Technical skills</h3>
+          <h3 className="font-display text-2xl tracking-tight text-ink md:text-3xl">The tools I reach for</h3>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">{skillmessage}</p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {skills.map((skill) => (
@@ -46,7 +46,7 @@ export default function Resume({ data }: ResumeProps) {
         </div>
 
         <div className="mt-16 md:mt-20">
-          <h3 className="font-display text-2xl tracking-tight text-ink md:text-3xl">Work</h3>
+          <h3 className="font-display text-2xl tracking-tight text-ink md:text-3xl">Experience</h3>
           <div className="mt-6 border-t border-line">
             {work.map((job) => (
               <article

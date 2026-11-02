@@ -75,14 +75,14 @@ export default function Contact() {
   ];
 
   const fieldClass =
-    "w-full rounded-xl border border-line bg-elevated px-4 py-3 text-base text-ink outline-none transition placeholder:text-subtle focus:border-accent focus:ring-2 focus:ring-accent/20";
+    "w-full rounded-xl border border-[#d6d2c7] bg-[#fbfaf6] px-4 py-3 text-base text-ink outline-none transition placeholder:text-subtle focus:border-accent focus:ring-2 focus:ring-accent/20";
 
   return (
-    <section id="contact" className="scroll-mt-24 bg-surface py-20 md:py-28" aria-labelledby="contact-heading">
+    <section id="contact" className="scroll-mt-24 bg-[#e8e2d5] py-20 md:py-28" aria-labelledby="contact-heading">
       <div className="shell">
         <SectionIntro
-          eyebrow="06 - Hello"
-          title="Contact"
+          eyebrow="05 / Start a conversation"
+          title="Let’s make something matter."
           headingId="contact-heading"
           description={contactmessage}
         />
@@ -201,7 +201,7 @@ export default function Contact() {
             <SocialLinks
               social={social}
               listClassName="mt-4 grid grid-cols-3 gap-2"
-              linkClassName="flex h-12 items-center justify-center rounded-xl border border-line text-ink transition hover:border-accent hover:bg-accent hover:text-[#0b100e]"
+              linkClassName="flex h-12 items-center justify-center rounded-xl border border-[#d6d2c7] bg-[#f5f2ea]/60 text-ink transition hover:border-accent hover:bg-accent hover:text-ink"
             />
           </aside>
         </div>

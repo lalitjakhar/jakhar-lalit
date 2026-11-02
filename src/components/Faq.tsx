@@ -3,13 +3,13 @@ import { FAQS } from "@/data/seo";
 
 export default function Faq() {
   return (
-    <section id="faq" className="scroll-mt-24 bg-paper py-20 md:py-28" aria-labelledby="faq-heading">
+    <section id="faq" className="scroll-mt-24 bg-surface py-20 md:py-28" aria-labelledby="faq-heading">
       <div className="shell">
         <SectionIntro
-          eyebrow="05 - FAQ"
-          title="Questions"
+          eyebrow="04 / Good to know"
+          title="A few questions"
           headingId="faq-heading"
-          description="Straight answers about the work, the stack, and how to get in touch."
+          description="A little more about my work, the technologies I use, and getting in touch."
         />
         <div className="max-w-3xl border-t border-line">
           {FAQS.map((item, index) => (

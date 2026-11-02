@@ -11,13 +11,13 @@ interface HeroProps {
 const stats = [
   {
     label: "Experience",
-    value: "Since 2022",
-    detail: "Frontend roles on product teams",
+    value: "4+ years",
+    detail: "Building production web interfaces",
   },
   {
     label: "Focus",
-    value: "React & Next.js",
-    detail: "TypeScript, responsive interfaces",
+    value: "React + Next.js",
+    detail: "TypeScript · modern frontend",
   },
   {
     label: "Based in",
@@ -26,8 +26,8 @@ const stats = [
   },
   {
     label: "Standards",
-    value: "Fast and clear",
-    detail: "Performance, SEO, and accessibility",
+    value: "End to end",
+    detail: "Design handoff through launch",
   },
 ];
 
@@ -43,23 +43,23 @@ export default function Hero({ data }: HeroProps) {
           <div className="min-w-0 lg:col-span-7">
             <p className="flex items-center gap-3 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-accent">
               <span className="h-px w-8 bg-accent" aria-hidden="true" />
-              Jaipur-based frontend developer
+              Frontend engineer · React & Next.js · Jaipur, India
             </p>
             <h1 className="mt-6 max-w-3xl text-balance text-white">
               <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em]">
-                I build
+                Thoughtful
               </span>
               <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em] text-[#d6bd91]">
-                thoughtful
+                digital products,
               </span>
               <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em]">
-                web experiences.
+                built with care.
               </span>
             </h1>
             <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-fog md:text-lg">
-              I’m Lalit Jakhar, a Jaipur-based frontend developer building considered,
-              responsive web experiences with React, Next.js, and TypeScript—from the
-              first design handoff to the final detail in production.
+              I’m Lalit Jakhar. I turn product ideas and design systems into responsive,
+              production-ready interfaces with React, Next.js, and TypeScript—with equal
+              care for the details people see and the code teams maintain.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a href="#portfolio" className="btn-primary">

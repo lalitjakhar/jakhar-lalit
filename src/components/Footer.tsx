@@ -32,16 +32,16 @@ export default function Footer({ data }: FooterProps) {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#0a0d0a] text-white" role="contentinfo">
+    <footer className="bg-[#101a14] text-white" role="contentinfo">
       <div className="shell pb-24 pt-16 md:pt-20">
         <div className="flex flex-col items-start justify-between gap-8 border-b border-white/10 pb-12 md:flex-row md:items-end">
           <div className="max-w-xl">
-            <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-fog-dim">Next</p>
+            <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-[#d6bd91]">Next</p>
             <p className="mt-3 font-display text-4xl leading-[1.05] tracking-tight text-white md:text-5xl">
               Have a product to build?
             </p>
           </div>
-          <a href="#contact" className="inline-flex items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-[#101310] transition hover:bg-[#d0b272]">
+          <a href="#contact" className="inline-flex items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-ink transition hover:bg-[#956b39]">
             Start a conversation
           </a>
         </div>
@@ -56,7 +56,7 @@ export default function Footer({ data }: FooterProps) {
               <SocialLinks
                 social={data.social}
                 listClassName="mt-6 flex flex-wrap gap-2"
-                linkClassName="flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 text-white transition hover:border-accent hover:bg-accent hover:text-[#0b100e]"
+                linkClassName="flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 text-white transition hover:border-accent hover:bg-accent hover:text-ink"
               />
             ) : null}
           </div>
