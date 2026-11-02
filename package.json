@@ -1,5 +1,5 @@
 {
-  "name": "lalit-jakhar",
+  "name": "jakhar-lalit-portfolio",
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@10.10.0",
@@ -10,7 +10,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

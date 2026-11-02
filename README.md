@@ -1,85 +1,46 @@
-# Lalit Jakhar - Portfolio Website
+# Lalit Jakhar — Portfolio
 
-A modern, responsive portfolio website built with Next.js 16.1.4, TypeScript, and Tailwind CSS.
+A responsive portfolio built with the Next.js App Router, React, TypeScript, and Tailwind CSS. The site includes selected projects, professional experience, skills, contact details, structured data, and locally stored portfolio images.
 
-## Features
+## Requirements
 
-- ⚡ Next.js 16.1.4 with Page Router
-- 🔷 TypeScript for type safety
-- 🎨 Tailwind CSS for styling
-- 📱 Fully responsive design
-- 🚀 Optimized for performance
-- 🔍 SEO optimized with metadata and structured data
-- 📊 Vercel Analytics integration
-- ⚡ Vercel Speed Insights
+- Node.js 20.9 or newer
+- pnpm 10.10.0 (the version specified by `package.json`)
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
-
-1. Install dependencies:
+## Start locally
 
 ```bash
-npm install
-# or
-yarn install
+pnpm install --frozen-lockfile
+pnpm dev
 ```
 
-2. Run the development server:
+Open [http://localhost:3000](http://localhost:3000).
+
+## Validate and build
 
 ```bash
-npm run dev
-# or
-yarn dev
+pnpm lint
+pnpm typecheck
+pnpm build
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Run the production build locally with `pnpm start`.
 
-## Build for Production
+## Project structure
 
-```bash
-npm run build
-npm start
+```text
+src/
+  app/         App Router pages, layout, and SEO routes
+  components/  Page sections and shared UI
+  data/        Portfolio content, project details, and SEO metadata
+  lib/         Shared utilities
+  styles/      Global styles
+public/
+  images/      Profile, project, gallery, and technology images
 ```
 
-## Project Structure
+Project content and metadata are maintained in `src/data/`. Replace or update images in `public/images/` and keep their paths and descriptions in sync with the data files.
 
-```
-├── src/
-│   ├── app/              # Next.js app directory (Page Router)
-│   │   ├── layout.tsx    # Root layout with metadata
-│   │   └── page.tsx      # Home page
-│   ├── components/       # React components
-│   │   ├── Header.tsx
-│   │   ├── About.tsx
-│   │   ├── Resume.tsx
-│   │   ├── Portfolio.tsx
-│   │   ├── Testimonials.tsx
-│   │   ├── Contact.tsx
-│   │   └── Footer.tsx
-│   ├── data/             # Data files
-│   │   └── resumeData.ts
-│   ├── styles/           # Global styles
-│   │   └── globals.css
-│   └── assets/           # Static assets
-├── public/               # Public assets
-└── package.json
-```
+## Deployment
 
-## Technologies Used
-
-- **Next.js 16.1.4** - React framework
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Utility-first CSS framework
-- **Lucide React** - Icon library
-- **Vercel Analytics** - Analytics
-- **Vercel Speed Insights** - Performance monitoring
-
-## License
-
-Copyright © 2024 Lalit Jakhar. All rights reserved.
+The project is configured for standard Next.js hosting, including Vercel. Import this repository into a hosting provider and use the default pnpm install and Next.js build settings. Set the production site URL and any service-specific settings in the hosting environment before deploying.
