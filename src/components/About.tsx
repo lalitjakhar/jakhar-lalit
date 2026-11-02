@@ -32,10 +32,10 @@ export default function About({ data }: AboutProps) {
         <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
             <SectionIntro
-              eyebrow="01 - Profile"
-              title="About"
+              eyebrow="01 / A little about my approach"
+              title="Ideas to interfaces."
               headingId="about-heading"
-              description="I build the layer people see, use, and remember: clear interfaces, thoughtful details, and dependable frontend code."
+              description="Frontend engineering with the product, the design, and the people using it in mind."
             />
             <div className="max-w-2xl space-y-5 text-base leading-relaxed text-muted md:text-lg">
               <p>{bio}</p>

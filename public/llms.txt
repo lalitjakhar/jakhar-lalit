@@ -1,10 +1,10 @@
 # Lalit Jakhar — Frontend Developer
 
-> Lalit Jakhar is a Jaipur-based frontend developer building fast, accessible digital experiences with React.js, Next.js, TypeScript, and Tailwind CSS.
+> Lalit Jakhar is a Jaipur-based frontend engineer specializing in React, Next.js, and TypeScript. He builds responsive digital experiences for product teams and clients.
 
 ## About
 - Name: Lalit Jakhar
-- Role: Frontend Developer, React and Next.js
+- Role: Frontend Engineer — React, Next.js, and TypeScript
 - Location: Jaipur, Rajasthan, India
 - Website: https://lalit-jakhar.vercel.app
 - Current work: Kroolo and Zyneto Global Technologies
@@ -12,10 +12,10 @@
 - Education: BCA, Computer Science, Maharishi Arvind Institute of Science & Management (June 2025)
 
 ## Selected work
-- Zyneto Global Technologies: https://www.zyneto.com (Feb 2024 – Present). Corporate site for AI engineering and digital services. Next.js, React.js, TypeScript, Tailwind CSS, Material-UI, Figma, SEO.
-- Kroolo AI WorkOS: https://www.kroolo.com (Nov 2024 – Present). Corporate site for an AI-powered WorkOS. Next.js, TypeScript, Tailwind CSS, SEO.
-- Cheelgadi, Jaipur: https://cheelgadi.com/ (Jul 2026 – Sep 2026). Vegetarian restaurant, hotel, and wedding venue near Jaipur Airport. React.js, Next.js, TypeScript, Tailwind CSS, Figma.
-- NDC Oman: https://ndcmuscat.com/en (Apr 2026 – Jul 2026). Corporate site for National Distribution Company, Oman. Next.js, TypeScript, Tailwind CSS, SEO.
+- Kroolo — AI WorkOS: https://www.kroolo.com (Oct 2024 – Present). Corporate website for an AI-powered work platform. Next.js, TypeScript, Tailwind CSS, SEO.
+- Zyneto Global Technologies: https://www.zyneto.com (Feb 2024 – Present). Corporate website for technology services. React, Next.js, TypeScript, Tailwind CSS, SEO.
+- Cheelgadi — Jaipur: https://cheelgadi.com/ (Jul 2026 – Sep 2026). Website for a vegetarian restaurant, hotel, and wedding venue near Jaipur Airport. React, Next.js, TypeScript, Tailwind CSS.
+- National Distribution Company — Oman: https://ndcmuscat.com/en (Apr 2026 – Jul 2026). Corporate website presenting distribution services, products, and partner brands. Next.js, TypeScript, Tailwind CSS, SEO.
 
 ## On this page
 - Home: https://lalit-jakhar.vercel.app/#home
@@ -37,7 +37,7 @@
 - Facebook: https://www.facebook.com/lalit.choudhary25
 
 ## Skills
-React.js, Next.js, TypeScript, JavaScript, HTML5, CSS, Tailwind CSS, Material-UI, Bootstrap, SEO, Web Performance, Git
+React, Next.js, TypeScript, JavaScript, HTML5, CSS, Tailwind CSS, Material UI, Bootstrap, technical SEO, accessibility, web performance, Git
 
 ## Sitemaps
 - https://lalit-jakhar.vercel.app/sitemap.xml

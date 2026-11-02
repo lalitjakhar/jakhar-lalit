@@ -41,7 +41,7 @@ export default function Footer({ data }: FooterProps) {
               Have a product to build?
             </p>
           </div>
-          <a href="#contact" className="inline-flex items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-ink transition hover:bg-[#956b39]">
+          <a href="#contact" className="inline-flex items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-ink transition hover:bg-[#c49b65]">
             Start a conversation
           </a>
         </div>
@@ -50,7 +50,7 @@ export default function Footer({ data }: FooterProps) {
           <div>
             <p className="font-display text-2xl tracking-tight">Lalit Jakhar</p>
             <p className="mt-4 text-sm leading-relaxed text-fog">
-              Frontend developer in Jaipur. I build responsive web applications with React.js, Next.js, and TypeScript.
+              Frontend engineer in Jaipur, India. I build considered, responsive digital experiences with React, Next.js, and TypeScript.
             </p>
             {data?.social ? (
               <SocialLinks

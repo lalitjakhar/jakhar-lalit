@@ -17,7 +17,7 @@ export default function Testimonials({ data }: TestimonialsProps) {
     >
       <div className="shell">
         <SectionIntro
-          eyebrow="03 / In good company"
+          eyebrow="04 / In good company"
           title="What collaborators say"
           headingId="testimonials-heading"
           description="A few words shared by people I’ve worked with across frontend projects and teams."

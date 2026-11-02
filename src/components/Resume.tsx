@@ -15,7 +15,7 @@ export default function Resume({ data }: ResumeProps) {
     <section id="resume" className="scroll-mt-24 bg-paper py-20 md:py-28" aria-labelledby="resume-heading">
       <div className="shell">
         <SectionIntro
-          eyebrow="02 / The work behind the work"
+          eyebrow="03 / The work behind the work"
           title="Built through experience"
           headingId="resume-heading"
           description="Four years of frontend practice across product teams, agency work, and client websites—grounded in thoughtful implementation and collaboration."

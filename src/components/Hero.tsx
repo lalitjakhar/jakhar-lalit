@@ -41,8 +41,8 @@ export default function Hero({ data }: HeroProps) {
       <div className="shell relative pt-28 pb-16 md:pt-32 md:pb-24">
         <div className="grid items-end gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="min-w-0 lg:col-span-7">
-            <p className="flex items-center gap-3 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-accent">
-              <span className="h-px w-8 bg-accent" aria-hidden="true" />
+            <p className="flex items-center gap-3 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[#d6bd91]">
+              <span className="h-px w-8 bg-[#d6bd91]" aria-hidden="true" />
               Frontend engineer · React & Next.js · Jaipur, India
             </p>
             <h1 className="mt-6 max-w-3xl text-balance text-white">
@@ -107,16 +107,16 @@ export default function Hero({ data }: HeroProps) {
           </figure>
         </div>
 
-        <dl className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-4">
+        <dl className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 md:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.label} className="bg-[#1a2a20] p-5 md:p-6">
-              <dt className="font-mono text-[11px] uppercase tracking-[0.16em] text-subtle">
+              <dt className="font-mono text-[11px] uppercase tracking-[0.16em] text-[#b8c2b8]">
                 {stat.label}
               </dt>
-              <dd className="mt-2 text-xl font-semibold leading-tight tracking-tight text-ink">
+              <dd className="mt-2 text-xl font-semibold leading-tight tracking-tight text-white">
                 {stat.value}
               </dd>
-              <dd className="mt-2 text-sm leading-snug text-muted">{stat.detail}</dd>
+              <dd className="mt-2 text-sm leading-snug text-fog">{stat.detail}</dd>
             </div>
           ))}
         </dl>

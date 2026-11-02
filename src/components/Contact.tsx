@@ -81,8 +81,8 @@ export default function Contact() {
     <section id="contact" className="scroll-mt-24 bg-[#e8e2d5] py-20 md:py-28" aria-labelledby="contact-heading">
       <div className="shell">
         <SectionIntro
-          eyebrow="05 / Start a conversation"
-          title="Let’s make something matter."
+          eyebrow="06 / Start a conversation"
+          title="Have a good idea? Let’s build it."
           headingId="contact-heading"
           description={contactmessage}
         />
@@ -183,7 +183,7 @@ export default function Contact() {
                       aria-label={`${method.title}: ${method.value}`}
                       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                     >
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent text-[#101310]">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent text-ink">
                         <Icon size={16} aria-hidden="true" />
                       </span>
                       <span>

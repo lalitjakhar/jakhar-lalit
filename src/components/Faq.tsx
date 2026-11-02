@@ -6,7 +6,7 @@ export default function Faq() {
     <section id="faq" className="scroll-mt-24 bg-surface py-20 md:py-28" aria-labelledby="faq-heading">
       <div className="shell">
         <SectionIntro
-          eyebrow="04 / Good to know"
+          eyebrow="05 / Good to know"
           title="A few questions"
           headingId="faq-heading"
           description="A little more about my work, the technologies I use, and getting in touch."
