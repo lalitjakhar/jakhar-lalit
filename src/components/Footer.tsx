@@ -14,7 +14,7 @@ const pageLinks = [
   { id: "resume", label: "Experience" },
   { id: "testimonials", label: "Recommendations" },
   { id: "faq", label: "Questions" },
-    { id: "contact", label: "Contact" },
+  { id: "contact", label: "Contact" },
 ];
 
 const technologies = [
@@ -56,7 +56,7 @@ export default function Footer({ data }: FooterProps) {
               <SocialLinks
                 social={data.social}
                 listClassName="mt-6 flex flex-wrap gap-2"
-                linkClassName="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white transition hover:bg-white hover:text-ink"
+                linkClassName="flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 text-white transition hover:border-accent hover:bg-accent hover:text-[#0b100e]"
               />
             ) : null}
           </div>
@@ -65,23 +65,23 @@ export default function Footer({ data }: FooterProps) {
             <p className="text-sm font-medium text-white">On this page</p>
             <ul className="mt-4 space-y-2.5">
               {pageLinks.map((link) => (
-                      <li key={link.id}>
+                <li key={link.id}>
                   <a href={`#${link.id}`} className="text-sm text-fog transition hover:text-white">
-                          {link.label}
-                        </a>
-                      </li>
-                    ))}
+                    {link.label}
+                  </a>
+                </li>
+              ))}
               {data?.resumedownload ? (
-                    <li>
-                      <a
+                <li>
+                  <a
                     href={data.resumedownload}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-fog transition hover:text-white"
                   >
                     Resume PDF
-                      </a>
-                    </li>
+                  </a>
+                </li>
               ) : null}
             </ul>
           </nav>
@@ -111,7 +111,7 @@ export default function Footer({ data }: FooterProps) {
                 </p>
               ) : null}
             </address>
-              </div>
+          </div>
 
           <div>
             <p className="text-sm font-medium text-white">Stack</p>

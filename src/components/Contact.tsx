@@ -201,7 +201,7 @@ export default function Contact() {
             <SocialLinks
               social={social}
               listClassName="mt-4 grid grid-cols-3 gap-2"
-              linkClassName="flex h-12 items-center justify-center rounded-xl border border-line text-ink transition hover:border-ink hover:bg-ink hover:text-white"
+              linkClassName="flex h-12 items-center justify-center rounded-xl border border-line text-ink transition hover:border-accent hover:bg-accent hover:text-[#0b100e]"
             />
           </aside>
         </div>
