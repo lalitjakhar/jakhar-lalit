@@ -22,7 +22,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
-        display: ["var(--font-space-grotesk)", "system-ui", "sans-serif"],
+        display: ["var(--font-zalando-sans-expanded)", "system-ui", "sans-serif"],
       },
     },
   },

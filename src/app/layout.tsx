@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans, Space_Grotesk } from "next/font/google";
+import { DM_Sans, Zalando_Sans_Expanded } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import StructuredData from "@/components/StructuredData";
@@ -14,11 +14,12 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
+const zalandoSansExpanded = Zalando_Sans_Expanded({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-space-grotesk",
+  weight: "500",
+  variable: "--font-zalando-sans-expanded",
   display: "swap",
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = buildSiteMetadata();
@@ -39,7 +40,7 @@ export default function RootLayout({
   const lcpImage = profileImages[0];
 
   return (
-    <html lang="en-IN" className={`${dmSans.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en-IN" className={`${dmSans.variable} ${zalandoSansExpanded.variable}`}>
       <head>
         <link
           rel="preload"
