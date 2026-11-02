@@ -22,14 +22,24 @@ export default function Testimonials({ data }: TestimonialsProps) {
           headingId="testimonials-heading"
           description="A few words shared by people I’ve worked with across frontend projects and teams."
         />
-        <div className="grid gap-4 md:grid-cols-2">
-          {data.testimonials.map((testimonial) => (
-            <figure key={testimonial.text.slice(0, 48)} className="flex h-full flex-col rounded-2xl border border-[#ded9cb] bg-[#f7f5ef] p-6 md:p-8">
-              <Quote size={18} className="text-accent" aria-hidden="true" />
-              <blockquote className="mt-4 flex-1">
-                <p className="text-pretty text-base leading-relaxed text-ink">{testimonial.text}</p>
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {data.testimonials.map((testimonial, index) => (
+            <figure
+              key={testimonial.text.slice(0, 48)}
+              className="group flex h-full flex-col rounded-2xl border border-[#ded9cb] bg-[#f7f5ef] p-6 transition hover:-translate-y-1 hover:border-[#b4864b]/50 md:p-7"
+            >
+              <div className="flex items-center justify-between">
+                <Quote size={19} className="text-[#805d35]" aria-hidden="true" />
+                <span className="font-mono text-[11px] tracking-[0.14em] text-subtle">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+              </div>
+              <blockquote className="mt-5 flex-1">
+                <p className="text-pretty text-sm leading-relaxed text-ink md:text-base">
+                  {testimonial.text}
+                </p>
               </blockquote>
-              <figcaption className="mt-6 font-mono text-[11px] uppercase tracking-[0.16em] text-subtle">
+              <figcaption className="mt-6 border-t border-[#ded9cb] pt-4 font-mono text-[10px] uppercase tracking-[0.16em] text-subtle">
                 Colleague feedback
               </figcaption>
             </figure>
