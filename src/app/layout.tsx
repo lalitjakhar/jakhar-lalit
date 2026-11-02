@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Manrope } from "next/font/google";
+import { DM_Sans, Space_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import StructuredData from "@/components/StructuredData";
@@ -7,10 +7,17 @@ import { buildSiteMetadata } from "@/data/seo";
 import { profileImages } from "@/data/siteImages";
 import "../styles/globals.css";
 
-const manrope = Manrope({
+const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: "variable",
-  variable: "--font-manrope",
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: "variable",
+  variable: "--font-space-grotesk",
   display: "swap",
 });
 
@@ -32,7 +39,7 @@ export default function RootLayout({
   const lcpImage = profileImages[0];
 
   return (
-    <html lang="en-IN" className={manrope.variable}>
+    <html lang="en-IN" className={`${dmSans.variable} ${spaceGrotesk.variable}`}>
       <head>
         <link
           rel="preload"
