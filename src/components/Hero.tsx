@@ -46,13 +46,13 @@ export default function Hero({ data }: HeroProps) {
               Frontend engineer · React & Next.js · Jaipur, India
             </p>
             <h1 className="mt-6 max-w-3xl text-balance text-white">
-              <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em]">
+              <span className="block font-display text-[clamp(2.5rem,5.2vw,5rem)] leading-[0.95] tracking-[-0.055em]">
                 Thoughtful
               </span>
-              <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em] text-[#d6bd91]">
+              <span className="block font-display text-[clamp(2.5rem,5.2vw,5rem)] leading-[0.95] tracking-[-0.055em] text-[#d6bd91]">
                 digital products,
               </span>
-              <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em]">
+              <span className="block font-display text-[clamp(2.5rem,5.2vw,5rem)] leading-[0.95] tracking-[-0.055em]">
                 built with care.
               </span>
             </h1>

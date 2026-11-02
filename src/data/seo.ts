@@ -9,7 +9,7 @@ import {
 } from "@/data/siteImages";
 
 export const SITE_NAME = "Lalit Jakhar";
-export const SITE_TITLE = "Lalit Jakhar | Frontend Engineer in Jaipur";
+export const SITE_TITLE = "Lalit Jakhar | React & Next.js Developer in Jaipur";
 export const SITE_UPDATED = "2026-11-02";
 export const SITE_DESCRIPTION =
   "Lalit Jakhar is a Jaipur-based frontend engineer specializing in React, Next.js, and TypeScript. Explore selected product, corporate, and client work.";
