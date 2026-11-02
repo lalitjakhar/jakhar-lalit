@@ -68,12 +68,12 @@ export default function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 border-b border-line/80 backdrop-blur-md transition-colors ${
-        isScrolled || isMobileMenuOpen ? "bg-paper/95" : "bg-paper/80"
+        isScrolled || isMobileMenuOpen ? "bg-[#14221a]/95" : "bg-[#14221a]/85"
       }`}
     >
       <div className="shell flex h-16 items-center justify-between gap-4">
-        <a href="#home" className="flex items-center gap-3 text-ink" aria-label="Lalit Jakhar, home">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent text-[11px] font-bold tracking-[0.14em] text-[#101310]">
+        <a href="#home" className="flex items-center gap-3 text-white" aria-label="Lalit Jakhar, home">
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent text-[11px] font-bold tracking-[0.14em] text-ink">
             LJ
           </span>
           <span className="font-display text-lg leading-none tracking-tight">Lalit Jakhar</span>
@@ -90,8 +90,8 @@ export default function Header() {
                     aria-current={active ? "location" : undefined}
                     className={`text-sm transition ${
                       active
-                        ? "font-medium text-ink underline decoration-accent decoration-2 underline-offset-[10px]"
-                        : "text-subtle hover:text-ink"
+                        ? "font-medium text-white underline decoration-accent decoration-2 underline-offset-[10px]"
+                        : "text-fog-dim hover:text-white"
                     }`}
                   >
                     {item.label}
@@ -108,7 +108,7 @@ export default function Header() {
           </a>
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line bg-surface text-ink md:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white md:hidden"
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-navigation"
@@ -120,7 +120,7 @@ export default function Header() {
       </div>
 
       {isMobileMenuOpen ? (
-        <nav id="mobile-navigation" aria-label="Mobile" className="border-t border-line bg-paper md:hidden">
+        <nav id="mobile-navigation" aria-label="Mobile" className="border-t border-white/10 bg-[#14221a] md:hidden">
           <ul className="shell max-h-[calc(100svh-4rem)] space-y-1 overflow-y-auto py-4">
             {navItems.map((item) => {
               const active = activeSection === item.id;
@@ -130,7 +130,7 @@ export default function Header() {
                     href={item.href}
                     aria-current={active ? "location" : undefined}
                     className={`block rounded-xl px-3 py-3 text-lg ${
-                      active ? "bg-elevated font-medium text-ink" : "text-muted"
+                      active ? "bg-white/10 font-medium text-white" : "text-fog-dim"
                     }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >

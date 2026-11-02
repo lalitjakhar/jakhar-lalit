@@ -19,7 +19,7 @@ export default function SectionIntro({
     <header className="mb-12 max-w-2xl md:mb-16">
       <p
         className={`font-mono text-[11px] uppercase tracking-[0.22em] ${
-          dark ? "text-fog-dim" : "text-accent"
+          dark ? "text-[#d6bd91]" : "text-[#805d35]"
         }`}
       >
         {eyebrow}

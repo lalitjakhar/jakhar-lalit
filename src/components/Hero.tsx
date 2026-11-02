@@ -45,21 +45,21 @@ export default function Hero({ data }: HeroProps) {
               <span className="h-px w-8 bg-accent" aria-hidden="true" />
               Jaipur-based frontend developer
             </p>
-            <h1 className="mt-6 max-w-3xl text-balance text-ink">
+            <h1 className="mt-6 max-w-3xl text-balance text-white">
               <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em]">
                 I build
               </span>
-              <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em] text-accent">
+              <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em] text-[#d6bd91]">
                 thoughtful
               </span>
               <span className="block font-display text-[clamp(2.75rem,7.3vw,6.6rem)] leading-[0.92] tracking-[-0.055em]">
                 web experiences.
               </span>
             </h1>
-            <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted md:text-lg">
-              I am Lalit Jakhar, a frontend developer shaping clear, fast digital products
-              with React.js, Next.js, and TypeScript. From the first pixel to the final
-              page load, I care about how every detail works.
+            <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-fog md:text-lg">
+              I’m Lalit Jakhar, a Jaipur-based frontend developer building considered,
+              responsive web experiences with React, Next.js, and TypeScript—from the
+              first design handoff to the final detail in production.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a href="#portfolio" className="btn-primary">
@@ -79,12 +79,12 @@ export default function Hero({ data }: HeroProps) {
             <SocialLinks
               social={data.social}
               listClassName="mt-8 flex flex-wrap gap-2"
-              linkClassName="flex h-10 w-10 items-center justify-center rounded-xl border border-line bg-surface text-ink transition hover:border-accent hover:bg-accent hover:text-[#0b100e]"
+              linkClassName="flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white transition hover:border-accent hover:bg-accent hover:text-ink"
             />
           </div>
 
           <figure className="min-w-0 lg:col-span-5">
-            <div className="relative overflow-hidden rounded-[2rem] border border-line bg-surface p-2 shadow-[0_24px_90px_-40px_rgba(0,0,0,0.9)]">
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-[#1c2b21] p-2 shadow-[0_24px_90px_-40px_rgba(0,0,0,0.9)]">
               <SeoImage
                 src={portrait.src}
                 alt={portrait.alt}
@@ -97,8 +97,8 @@ export default function Hero({ data }: HeroProps) {
               />
               <div aria-hidden="true" className="absolute bottom-5 left-5 right-5 flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#101310]/90 px-4 py-3 backdrop-blur-md">
                 <span>
-                  <span className="block text-sm font-semibold text-ink">Lalit Jakhar</span>
-                  <span className="mt-0.5 block text-xs text-muted">Frontend developer · Jaipur, India</span>
+                  <span className="block text-sm font-semibold text-white">Lalit Jakhar</span>
+                  <span className="mt-0.5 block text-xs text-fog">Frontend developer · Jaipur, India</span>
                 </span>
                 <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-accent shadow-[0_0_16px_rgba(223,195,132,0.65)]" />
               </div>
@@ -109,7 +109,7 @@ export default function Hero({ data }: HeroProps) {
 
         <dl className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-4">
           {stats.map((stat) => (
-            <div key={stat.label} className="bg-paper p-5 md:p-6">
+            <div key={stat.label} className="bg-[#1a2a20] p-5 md:p-6">
               <dt className="font-mono text-[11px] uppercase tracking-[0.16em] text-subtle">
                 {stat.label}
               </dt>

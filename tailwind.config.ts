@@ -9,16 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        paper: "#101310",
-        ink: "#f3f0e7",
-        muted: "#b8baad",
-        subtle: "#92958a",
-        line: "#343b31",
-        accent: "#dfc384",
-        surface: "#171c18",
-        elevated: "#20251f",
-        fog: "#d5d4c7",
-        "fog-dim": "#a3a392",
+        paper: "#f5f2ea",
+        ink: "#19251e",
+        muted: "#58645b",
+        subtle: "#788278",
+        line: "#dce1d8",
+        accent: "#b4864b",
+        surface: "#e9eee7",
+        elevated: "#fffefa",
+        fog: "#dce4dc",
+        "fog-dim": "#aeb9af",
       },
       fontFamily: {
         sans: ["var(--font-manrope)", "system-ui", "sans-serif"],

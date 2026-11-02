@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --paper: #101310;
-  --ink: #f3f0e7;
-  --accent: #dfc384;
-  color-scheme: dark;
+  --paper: #f5f2ea;
+  --ink: #19251e;
+  --accent: #b4864b;
+  color-scheme: light;
 }
 
 html {
@@ -20,7 +20,7 @@ body {
 
 ::selection {
   background: var(--accent);
-  color: #101310;
+  color: #19251e;
 }
 
 a:focus-visible,
@@ -41,9 +41,11 @@ summary {
 .hero-grid {
   position: relative;
   isolation: isolate;
+  background-color: #14221a;
   background:
-    radial-gradient(ellipse at 86% 20%, rgba(162, 137, 82, 0.14), transparent 34%),
-    radial-gradient(ellipse at 10% 82%, rgba(84, 78, 51, 0.16), transparent 36%);
+    radial-gradient(ellipse at 86% 20%, rgba(180, 134, 75, 0.18), transparent 34%),
+    radial-gradient(ellipse at 10% 82%, rgba(82, 108, 82, 0.2), transparent 36%),
+    #14221a;
 }
 
 .hero-grid::before {
@@ -52,9 +54,9 @@ summary {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(to right, rgba(238, 243, 235, 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(238, 243, 235, 0.035) 1px, transparent 1px);
-  background-size: 72px 72px;
+    linear-gradient(to right, rgba(238, 243, 235, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(238, 243, 235, 0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
   mask-image: radial-gradient(ellipse at 72% 18%, black 8%, transparent 72%);
 }
 
@@ -64,11 +66,11 @@ summary {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-[#101310] transition hover:bg-[#d0b272];
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-ink transition hover:bg-[#956b39];
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-line bg-surface px-5 py-3 text-sm font-medium text-ink transition hover:border-accent/60 hover:bg-elevated;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-line bg-elevated px-5 py-3 text-sm font-medium text-ink transition hover:border-accent/60 hover:bg-surface;
   }
 }
 

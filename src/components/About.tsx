@@ -35,14 +35,14 @@ export default function About({ data }: AboutProps) {
               eyebrow="01 - Profile"
               title="About"
               headingId="about-heading"
-              description="Frontend developer working with React.js and Next.js on products for recruiting, ecommerce, and AI productivity."
+              description="I build the layer people see, use, and remember: clear interfaces, thoughtful details, and dependable frontend code."
             />
             <div className="max-w-2xl space-y-5 text-base leading-relaxed text-muted md:text-lg">
               <p>{bio}</p>
               <p>
-                I turn interface designs into maintainable frontend code: responsive layouts,
-                typed React components, and careful performance work. Recent projects include
-                corporate and product sites where the page has to stay clear on every screen.
+                My work spans AI productivity, corporate, hospitality, and distribution websites.
+                I translate design intent into responsive React interfaces, then refine structure,
+                accessibility, and search metadata so the experience works as well as it looks.
                 See the{" "}
                 <a className="font-medium text-ink underline decoration-ink/20 underline-offset-4 hover:decoration-accent" href="#portfolio">
                   selected work
@@ -57,7 +57,7 @@ export default function About({ data }: AboutProps) {
             <div className="mt-8">
                 <a
                   href={resumedownload}
-                className="btn-primary"
+                  className="btn-primary"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -83,7 +83,7 @@ export default function About({ data }: AboutProps) {
         </div>
 
         <div className="mt-16 md:mt-20">
-          <h3 className="font-display text-2xl tracking-tight text-ink md:text-3xl">Professional moments</h3>
+          <h3 className="font-display text-2xl tracking-tight text-ink md:text-3xl">A little beyond the screen</h3>
           <ul className="mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 md:grid md:grid-cols-4 md:overflow-visible md:pb-0">
             {aboutGalleryImages.map((image) => (
               <li key={image.src} className="w-[78%] shrink-0 snap-start md:w-auto">
