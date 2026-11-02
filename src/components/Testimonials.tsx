@@ -23,7 +23,7 @@ export default function Testimonials({ data }: TestimonialsProps) {
           description="A few words shared by people I’ve worked with across frontend projects and teams."
         />
         <div className="grid gap-4 md:grid-cols-2">
-          {data.testimonials.map((testimonial, index) => (
+          {data.testimonials.map((testimonial) => (
             <figure key={testimonial.text.slice(0, 48)} className="flex h-full flex-col rounded-2xl border border-[#ded9cb] bg-[#f7f5ef] p-6 md:p-8">
               <Quote size={18} className="text-accent" aria-hidden="true" />
               <blockquote className="mt-4 flex-1">
