@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --paper: #0b100e;
-  --ink: #eef3eb;
-  --accent: #c7f36a;
+  --paper: #101310;
+  --ink: #f3f0e7;
+  --accent: #dfc384;
   color-scheme: dark;
 }
 
@@ -20,7 +20,7 @@ body {
 
 ::selection {
   background: var(--accent);
-  color: #0b100e;
+  color: #101310;
 }
 
 a:focus-visible,
@@ -42,8 +42,8 @@ summary {
   position: relative;
   isolation: isolate;
   background:
-    radial-gradient(ellipse at 86% 20%, rgba(116, 153, 74, 0.16), transparent 34%),
-    radial-gradient(ellipse at 10% 82%, rgba(38, 77, 54, 0.18), transparent 36%);
+    radial-gradient(ellipse at 86% 20%, rgba(162, 137, 82, 0.14), transparent 34%),
+    radial-gradient(ellipse at 10% 82%, rgba(84, 78, 51, 0.16), transparent 36%);
 }
 
 .hero-grid::before {
@@ -64,7 +64,7 @@ summary {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-[#0b100e] transition hover:bg-[#b5e958];
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-[#101310] transition hover:bg-[#d0b272];
   }
 
   .btn-secondary {

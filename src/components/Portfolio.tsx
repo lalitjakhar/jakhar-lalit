@@ -7,7 +7,7 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="scroll-mt-24 bg-[#101813] py-20 text-white md:py-28"
+      className="scroll-mt-24 bg-[#171c18] py-20 text-white md:py-28"
       aria-labelledby="portfolio-heading"
     >
       <div className="shell">
@@ -31,7 +31,7 @@ export default function Portfolio() {
                   rel="noopener noreferrer"
                   className="group block"
                 >
-                  <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#0b100e]">
+                  <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#101310]">
                     <SeoImage
                       src={project.image.src}
                       alt={project.image.alt}

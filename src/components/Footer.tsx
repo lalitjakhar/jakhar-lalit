@@ -32,7 +32,7 @@ export default function Footer({ data }: FooterProps) {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#070b09] text-white" role="contentinfo">
+    <footer className="bg-[#0a0d0a] text-white" role="contentinfo">
       <div className="shell pb-24 pt-16 md:pt-20">
         <div className="flex flex-col items-start justify-between gap-8 border-b border-white/10 pb-12 md:flex-row md:items-end">
           <div className="max-w-xl">
@@ -41,7 +41,7 @@ export default function Footer({ data }: FooterProps) {
               Have a product to build?
             </p>
           </div>
-          <a href="#contact" className="inline-flex items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-[#0b100e] transition hover:bg-[#b5e958]">
+          <a href="#contact" className="inline-flex items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-[#101310] transition hover:bg-[#d0b272]">
             Start a conversation
           </a>
         </div>

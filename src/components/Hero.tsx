@@ -95,12 +95,12 @@ export default function Hero({ data }: HeroProps) {
                 sizes="(max-width: 1024px) 100vw, 420px"
                 className="aspect-[4/5] w-full rounded-[1.5rem] object-cover object-top"
               />
-              <div aria-hidden="true" className="absolute bottom-5 left-5 right-5 flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#0b100e]/90 px-4 py-3 backdrop-blur-md">
+              <div aria-hidden="true" className="absolute bottom-5 left-5 right-5 flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#101310]/90 px-4 py-3 backdrop-blur-md">
                 <span>
                   <span className="block text-sm font-semibold text-ink">Lalit Jakhar</span>
                   <span className="mt-0.5 block text-xs text-muted">Frontend developer · Jaipur, India</span>
                 </span>
-                <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-accent shadow-[0_0_16px_rgba(199,243,106,0.8)]" />
+                <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-accent shadow-[0_0_16px_rgba(223,195,132,0.65)]" />
               </div>
             </div>
             <figcaption className="sr-only">{portrait.caption}</figcaption>

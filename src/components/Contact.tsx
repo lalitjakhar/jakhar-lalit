@@ -183,7 +183,7 @@ export default function Contact() {
                       aria-label={`${method.title}: ${method.value}`}
                       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                     >
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent text-[#0b100e]">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent text-[#101310]">
                         <Icon size={16} aria-hidden="true" />
                       </span>
                       <span>

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans, Zalando_Sans_Expanded } from "next/font/google";
+import { Manrope } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import StructuredData from "@/components/StructuredData";
@@ -7,19 +7,11 @@ import { buildSiteMetadata } from "@/data/seo";
 import { profileImages } from "@/data/siteImages";
 import "../styles/globals.css";
 
-const dmSans = DM_Sans({
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-dm-sans",
+  weight: "variable",
+  variable: "--font-manrope",
   display: "swap",
-});
-
-const zalandoSansExpanded = Zalando_Sans_Expanded({
-  subsets: ["latin"],
-  weight: "500",
-  variable: "--font-zalando-sans-expanded",
-  display: "swap",
-  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = buildSiteMetadata();
@@ -29,7 +21,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#0b100e",
+  themeColor: "#101310",
 };
 
 export default function RootLayout({
@@ -40,7 +32,7 @@ export default function RootLayout({
   const lcpImage = profileImages[0];
 
   return (
-    <html lang="en-IN" className={`${dmSans.variable} ${zalandoSansExpanded.variable}`}>
+    <html lang="en-IN" className={manrope.variable}>
       <head>
         <link
           rel="preload"

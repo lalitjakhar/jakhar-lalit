@@ -73,7 +73,7 @@ export default function Header() {
     >
       <div className="shell flex h-16 items-center justify-between gap-4">
         <a href="#home" className="flex items-center gap-3 text-ink" aria-label="Lalit Jakhar, home">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent text-[11px] font-bold tracking-[0.14em] text-[#0b100e]">
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent text-[11px] font-bold tracking-[0.14em] text-[#101310]">
             LJ
           </span>
           <span className="font-display text-lg leading-none tracking-tight">Lalit Jakhar</span>
