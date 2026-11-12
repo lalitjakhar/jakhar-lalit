@@ -32,16 +32,16 @@ export default function Footer({ data }: FooterProps) {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#070b09] text-white" role="contentinfo">
+    <footer className="bg-hero text-white" role="contentinfo">
       <div className="shell pb-24 pt-16 md:pt-20">
         <div className="flex flex-col items-start justify-between gap-8 border-b border-white/10 pb-12 md:flex-row md:items-end">
           <div className="max-w-xl">
-            <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-fog-dim">Next</p>
-            <p className="mt-3 font-display text-4xl leading-[1.05] tracking-tight text-white md:text-5xl">
+            <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-accent-soft">Next</p>
+            <p className="mt-3 font-display text-section text-white">
               Have a product to build?
             </p>
           </div>
-          <a href="#contact" className="inline-flex items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-[#0b100e] transition hover:bg-[#b5e958]">
+          <a href="#contact" className="inline-flex items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent-hover">
             Start a conversation
           </a>
         </div>
@@ -50,13 +50,13 @@ export default function Footer({ data }: FooterProps) {
           <div>
             <p className="font-display text-2xl tracking-tight">Lalit Jakhar</p>
             <p className="mt-4 text-sm leading-relaxed text-fog">
-              Frontend developer in Jaipur. I build responsive web applications with React.js, Next.js, and TypeScript.
+              Frontend engineer in Jaipur, India. I build considered, responsive digital experiences with React, Next.js, and TypeScript.
             </p>
             {data?.social ? (
               <SocialLinks
                 social={data.social}
                 listClassName="mt-6 flex flex-wrap gap-2"
-                linkClassName="flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 text-white transition hover:border-accent hover:bg-accent hover:text-[#0b100e]"
+                linkClassName="flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 text-white transition hover:border-accent hover:bg-accent hover:text-white"
               />
             ) : null}
           </div>

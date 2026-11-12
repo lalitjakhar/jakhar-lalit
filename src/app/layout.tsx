@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans, Zalando_Sans_Expanded } from "next/font/google";
+import { DM_Sans, Space_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import StructuredData from "@/components/StructuredData";
@@ -9,17 +9,16 @@ import "../styles/globals.css";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: "variable",
   variable: "--font-dm-sans",
   display: "swap",
 });
 
-const zalandoSansExpanded = Zalando_Sans_Expanded({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: "500",
-  variable: "--font-zalando-sans-expanded",
+  weight: "variable",
+  variable: "--font-space-grotesk",
   display: "swap",
-  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = buildSiteMetadata();
@@ -29,7 +28,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#0b100e",
+  themeColor: "#211619",
 };
 
 export default function RootLayout({
@@ -40,7 +39,7 @@ export default function RootLayout({
   const lcpImage = profileImages[0];
 
   return (
-    <html lang="en-IN" className={`${dmSans.variable} ${zalandoSansExpanded.variable}`}>
+    <html lang="en-IN" className={`${dmSans.variable} ${spaceGrotesk.variable}`}>
       <head>
         <link
           rel="preload"

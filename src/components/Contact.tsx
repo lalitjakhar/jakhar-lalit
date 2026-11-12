@@ -75,51 +75,57 @@ export default function Contact() {
   ];
 
   const fieldClass =
-    "w-full rounded-xl border border-line bg-elevated px-4 py-3 text-base text-ink outline-none transition placeholder:text-subtle focus:border-accent focus:ring-2 focus:ring-accent/20";
+    "w-full rounded-xl border border-line bg-paper px-4 py-3 text-base text-ink outline-none transition placeholder:text-subtle focus:border-accent focus:ring-2 focus:ring-accent/20";
 
   return (
-    <section id="contact" className="scroll-mt-24 bg-surface py-20 md:py-28" aria-labelledby="contact-heading">
+    <section id="contact" className="scroll-mt-24 bg-blush-deep py-20 md:py-28" aria-labelledby="contact-heading">
       <div className="shell">
         <SectionIntro
-          eyebrow="06 - Hello"
-          title="Contact"
+          eyebrow="06 / Start a conversation"
+          title="Have a good idea? Let’s build it."
           headingId="contact-heading"
           description={contactmessage}
         />
 
         <div className="grid items-start gap-10 lg:grid-cols-12 lg:gap-16">
-          <form className="space-y-5 lg:col-span-7" onSubmit={handleSubmit} aria-label="Contact form">
-            <div>
-              <label htmlFor="contact-name" className="mb-2 block text-sm font-medium text-ink">
-                Name
-              </label>
-              <input
-                id="contact-name"
-                type="text"
-                name="name"
-                autoComplete="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                placeholder="Your name"
-                className={fieldClass}
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="contact-email" className="mb-2 block text-sm font-medium text-ink">
-                Email
-              </label>
-              <input
-                id="contact-email"
-                type="email"
-                name="email"
-                autoComplete="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                placeholder="you@company.com"
-                className={fieldClass}
-                required
-              />
+          <form
+            className="space-y-5 rounded-3xl border border-line bg-paper p-5 md:p-8 lg:col-span-7"
+            onSubmit={handleSubmit}
+            aria-label="Contact form"
+          >
+            <div className="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label htmlFor="contact-name" className="mb-2 block text-sm font-medium text-ink">
+                  Name
+                </label>
+                <input
+                  id="contact-name"
+                  type="text"
+                  name="name"
+                  autoComplete="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  placeholder="Your name"
+                  className={fieldClass}
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="contact-email" className="mb-2 block text-sm font-medium text-ink">
+                  Email
+                </label>
+                <input
+                  id="contact-email"
+                  type="email"
+                  name="email"
+                  autoComplete="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="you@company.com"
+                  className={fieldClass}
+                  required
+                />
+              </div>
             </div>
             <div>
               <label htmlFor="contact-subject" className="mb-2 block text-sm font-medium text-ink">
@@ -170,8 +176,17 @@ export default function Contact() {
             )}
           </form>
 
-          <aside className="lg:col-span-5 lg:sticky lg:top-24">
-            <ul className="divide-y divide-line rounded-2xl border border-line bg-elevated">
+          <aside className="rounded-3xl bg-night p-6 text-white md:p-8 lg:sticky lg:top-24 lg:col-span-5">
+            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-soft">
+              Say hello
+            </p>
+            <h3 className="mt-3 font-display text-subsection">
+              Let’s start with a conversation.
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-fog">
+              Reach me directly, or find me around the web.
+            </p>
+            <ul className="mt-6 divide-y divide-white/10 rounded-2xl border border-white/10">
               {contactMethods.map((method) => {
                 const Icon = method.icon;
                 const external = method.href.startsWith("http");
@@ -179,19 +194,19 @@ export default function Contact() {
                   <li key={method.title}>
                     <a
                       href={method.href}
-                      className="flex gap-4 p-5 transition hover:bg-paper"
+                      className="flex gap-4 rounded-xl p-4 transition hover:bg-white/5 md:p-5"
                       aria-label={`${method.title}: ${method.value}`}
                       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                     >
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent text-[#0b100e]">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent text-ink">
                         <Icon size={16} aria-hidden="true" />
                       </span>
                       <span>
-                        <span className="block font-mono text-[11px] uppercase tracking-[0.16em] text-subtle">
+                        <span className="block font-mono text-[11px] uppercase tracking-[0.16em] text-accent-soft">
                           {method.title}
                         </span>
-                        <span className="mt-1 block font-medium text-ink">{method.value}</span>
-                        <span className="mt-1 block text-sm text-muted">{method.note}</span>
+                        <span className="mt-1 block break-words font-medium text-white">{method.value}</span>
+                        <span className="mt-1 block text-sm text-fog">{method.note}</span>
                       </span>
                     </a>
                   </li>
@@ -201,7 +216,7 @@ export default function Contact() {
             <SocialLinks
               social={social}
               listClassName="mt-4 grid grid-cols-3 gap-2"
-              linkClassName="flex h-12 items-center justify-center rounded-xl border border-line text-ink transition hover:border-accent hover:bg-accent hover:text-[#0b100e]"
+              linkClassName="flex h-12 items-center justify-center rounded-xl border border-white/15 text-white transition hover:border-accent hover:bg-accent hover:text-white"
             />
           </aside>
         </div>

@@ -64,10 +64,10 @@ export interface ResumeDataStructure {
 export const resumeData: ResumeDataStructure = {
   main: {
     name: "Lalit Jakhar",
-    occupation: "Frontend Developer",
-    bio: "I am a Frontend Developer passionate about crafting modern, impactful web experiences. Currently working at Zyneto Global Technologies, I focus on responsive and engaging solutions, especially for the recruiting and ecommerce industries. My expertise includes React.js, Next.js, Tailwind CSS, and Material-UI. I continuously explore new technologies and innovative solutions to enhance user interactions.",
+    occupation: "Frontend Engineer",
+    bio: "I’m Lalit Jakhar, a frontend developer based in Jaipur, India. I build responsive web experiences with React, Next.js, and TypeScript, partnering with product and design teams to turn ideas into polished, production-ready interfaces.",
     contactmessage:
-      "Have a project for me? Think I'd be a good fit for your team? I'd love to hear from you. Reach out by email or use the form below.",
+      "Have a product, website, or frontend role in mind? Tell me what you’re building. I’m happy to talk through the brief, the team, and how I could contribute.",
     email: "lalit25jakhar@gmail.com",
     phone: "+91 8690843263",
     address: {
@@ -105,7 +105,7 @@ export const resumeData: ResumeDataStructure = {
   },
   resume: {
     skillmessage:
-      "I am passionate about frontend development and always eager to learn new technologies. Here are some key skills:",
+      "A practical toolkit for building accessible, responsive interfaces—from component architecture through launch and ongoing refinement.",
     education: [
       {
         school: "Maharishi Arvind Institute of Science & Management",
@@ -121,94 +121,94 @@ export const resumeData: ResumeDataStructure = {
         title: "Frontend Web Developer",
         years: "Oct 2024 - Present",
         description:
-          "At Kroolo, I contribute to building innovative, user-centric web applications that empower productivity through AI-driven solutions. My role involves designing and implementing responsive, intuitive interfaces using modern frameworks. Collaborating closely with cross-functional teams, I ensure seamless integration of AI features into the platform, enhancing user workflows and streamlining complex tasks. My work focuses on optimizing performance, accessibility, and scalability, enabling Kroolo to deliver a cutting-edge experience to its users. On kroolo.com I build the corporate site in Next.js, TypeScript, and Tailwind CSS, including SEO audits and a structure that presents the AI WorkOS clearly.",
+          "Build and refine the Kroolo corporate website, presenting its AI-powered WorkOS, workflows, and productivity features. Develop responsive pages with Next.js, TypeScript, and Tailwind CSS, with attention to clear information architecture and on-page SEO.",
       },
       {
         company: "Zyneto Global Technologies",
         title: "Frontend Developer",
         years: "February 2024 - Present",
         description:
-          "Develop and maintain responsive web applications using React.js and Next.js. Collaborate with the design team to implement UI/UX designs using Material-UI and Tailwind CSS. Key skills: React.js, Next.js, JavaScript, HTML, CSS, Bootstrap, Tailwind CSS, Material-UI, Web Performance Optimization. Client sites include the Zyneto corporate website, Cheelgadi (a vegetarian restaurant, hotel, and wedding venue in Jaipur), and NDC Oman.",
+          "Develop responsive React and Next.js experiences with design and product teams. Selected work includes Zyneto’s corporate site, Cheelgadi in Jaipur, and National Distribution Company in Oman, using TypeScript, Tailwind CSS, and Material UI across projects.",
       },
       {
         company: "GOHASHINCLUDE PVT. LTD.",
         title: "Frontend Developer",
         years: "September 2022 - February 2024",
         description:
-          "Built and maintained front-end components using HTML, CSS, JavaScript, and React.js. Worked closely with backend developers to integrate RESTful APIs. Key skills: HTML, CSS, JavaScript, Bootstrap, React.js, Next.js.",
+          "Built and maintained frontend components with HTML, CSS, JavaScript, and React. Collaborated with backend developers to integrate REST APIs and deliver responsive web interfaces.",
       },
     ],
     skills: [
       {
         name: "React.js",
         description:
-          "Experienced in building dynamic and responsive web applications using React.js.",
+          "Build reusable, component-driven interfaces for interactive web applications.",
         image: "react.svg",
       },
       {
         name: "Next.js",
         description:
-          "Skilled in Next.js for server-side rendering and optimized React-based applications.",
+          "Create production-ready React experiences with routing, rendering, and framework-level optimizations.",
         image: "nextjs.svg",
       },
       {
         name: "TypeScript",
         description:
-          "Expert in TypeScript for type-safe development, improving code quality and maintainability.",
+          "Add clear types to components, props, and application data for maintainable code.",
         image: "typescript.svg",
       },
       {
         name: "JavaScript",
         description:
-          "Proficient in JavaScript, including modern ES6+ syntax for writing clean, maintainable code.",
+          "Use modern JavaScript to build clean, reliable frontend interactions.",
         image: "javascript.svg",
       },
       {
         name: "Performance Optimization",
         description:
-          "Experienced in optimizing & improving performance and load times.",
+          "Consider page weight, image delivery, and rendering behavior when building for the web.",
         image: "performance.svg",
       },
       {
         name: "HTML5",
         description:
-          "Strong foundation in HTML5 for structuring and presenting web content effectively.",
+          "Structure content with semantic, accessible HTML elements.",
         image: "html.svg",
       },
       {
         name: "CSS",
         description:
-          "Expertise in CSS for styling and creating visually appealing web layouts.",
+          "Create responsive layouts, visual systems, and considered interface details.",
         image: "css.svg",
       },
       {
         name: "Bootstrap",
         description:
-          "Experienced in using Bootstrap for responsive and mobile-first web designs.",
+          "Use Bootstrap components and grid utilities to build responsive layouts.",
         image: "bootstrap.svg",
       },
       {
         name: "Tailwind CSS",
         description:
-          "Proficient in Tailwind CSS for utility-first styling and custom design implementations.",
+          "Build consistent, responsive interfaces with utility-first styling.",
         image: "tailwind.svg",
       },
       {
         name: "Material-UI",
         description:
-          "Skilled in Material-UI for building cohesive and visually consistent UI components.",
+          "Apply Material UI components and theming to product interfaces.",
         image: "material_ui.svg",
       },
       {
         name: "SEO Optimization",
         description:
-          "Proficient in SEO optimization and search engine rankings.",
+          "Use semantic page structure, metadata, and structured data to support discoverability.",
         image: "seo-optimization.svg",
       },
       {
         name: "Git",
         description:
-          "Proficient in using Git for version control and collaboration.",
+          "Track changes and collaborate through version-controlled workflows.",
         image: "github.svg",
       },
     ],

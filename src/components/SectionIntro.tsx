@@ -19,14 +19,14 @@ export default function SectionIntro({
     <header className="mb-12 max-w-2xl md:mb-16">
       <p
         className={`font-mono text-[11px] uppercase tracking-[0.22em] ${
-          dark ? "text-fog-dim" : "text-accent"
+          dark ? "text-accent-soft" : "text-accent-deep"
         }`}
       >
         {eyebrow}
       </p>
       <h2
         id={headingId}
-        className={`mt-3 text-balance font-display text-4xl leading-[1.05] tracking-tight md:text-5xl ${
+        className={`mt-3 text-balance font-display text-section ${
           dark ? "text-white" : "text-ink"
         }`}
       >

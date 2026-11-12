@@ -12,25 +12,35 @@ export default function Testimonials({ data }: TestimonialsProps) {
   return (
     <section
       id="testimonials"
-      className="scroll-mt-24 bg-surface py-20 md:py-28"
+      className="scroll-mt-24 bg-blush py-20 md:py-28"
       aria-labelledby="testimonials-heading"
     >
       <div className="shell">
         <SectionIntro
-          eyebrow="04 - Notes"
-          title="Recommendations"
+          eyebrow="04 / In good company"
+          title="What collaborators say"
           headingId="testimonials-heading"
-          description="Notes from people who have worked with me on frontend projects."
+          description="A few words shared by people I’ve worked with across frontend projects and teams."
         />
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {data.testimonials.map((testimonial, index) => (
-            <figure key={testimonial.text.slice(0, 48)} className="flex h-full flex-col rounded-2xl border border-line bg-elevated p-6 md:p-8">
-              <Quote size={18} className="text-accent" aria-hidden="true" />
-              <blockquote className="mt-4 flex-1">
-                <p className="text-pretty text-base leading-relaxed text-ink">{testimonial.text}</p>
+            <figure
+              key={testimonial.text.slice(0, 48)}
+              className="group flex h-full flex-col rounded-2xl border border-line bg-elevated p-6 transition hover:-translate-y-1 hover:border-accent/50 md:p-7"
+            >
+              <div className="flex items-center justify-between">
+                <Quote size={19} className="text-accent-deep" aria-hidden="true" />
+                <span className="font-mono text-[11px] tracking-[0.14em] text-subtle">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+              </div>
+              <blockquote className="mt-5 flex-1">
+                <p className="text-pretty text-sm leading-relaxed text-ink md:text-base">
+                  {testimonial.text}
+                </p>
               </blockquote>
-              <figcaption className="mt-6 font-mono text-[11px] uppercase tracking-[0.16em] text-subtle">
-                Recommendation {String(index + 1).padStart(2, "0")}
+              <figcaption className="mt-6 border-t border-line pt-4 font-mono text-[10px] uppercase tracking-[0.16em] text-subtle">
+                Colleague feedback
               </figcaption>
             </figure>
           ))}
